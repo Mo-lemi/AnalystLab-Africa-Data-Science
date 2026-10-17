@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Programme brief (shared privately by AnalystLab Africa)
+AnalystLab_Africa_Week1_*.pdf

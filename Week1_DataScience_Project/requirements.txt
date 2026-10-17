@@ -3,6 +3,7 @@ numpy>=1.26
 matplotlib>=3.8
 seaborn>=0.13
 missingno>=0.5
+scipy>=1.11
 scikit-learn>=1.4
 jupyter>=1.0
 nbconvert>=7.0

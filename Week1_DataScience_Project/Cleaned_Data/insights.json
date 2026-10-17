@@ -1,0 +1,27 @@
+{
+  "top_product": "Beauty Item 210",
+  "top_product_revenue": 7375596.4,
+  "best_store": "Lagos (STR003)",
+  "best_store_revenue": 102203162.7,
+  "worst_store": "Kano (STR002)",
+  "worst_store_revenue": 81066968.25,
+  "top_segment": "Gold",
+  "top_age_group": "45-54",
+  "high_return_products": 12,
+  "top_return_product": "Home Item 263",
+  "top_return_rate": 0.11578947368421053,
+  "peak_month": "Dec",
+  "peak_month_revenue": 201038740.75,
+  "low_month": "Feb",
+  "category_growth": {
+    "Fashion": 0.09971952319519128,
+    "Beauty": 0.07641594642603877,
+    "Electronics": 0.04788640707481551,
+    "Home": 0.038206887983488924,
+    "Groceries": 0.011103998749040223
+  },
+  "best_supplier": "Thomas Ltd Supplies",
+  "restock_items": 21,
+  "best_zone": "South West",
+  "worst_zone": "North West"
+}

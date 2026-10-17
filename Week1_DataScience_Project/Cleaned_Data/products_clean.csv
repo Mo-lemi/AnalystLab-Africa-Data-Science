@@ -1,0 +1,501 @@
+product_id,product_name,category,brand,cost_price,selling_price,supplier_name,supplier_id,supplier_country
+PROD0001,Beauty Item 1,Beauty,Zuniga PLC,44803,75526.21,Zuniga PLC Supplies,SUP001,Nigeria
+PROD0002,Beauty Item 2,Beauty,Olson-Rosales,11728,14100.26,Olson-Rosales Supplies,SUP002,Germany
+PROD0003,Electronics Item 3,Electronics,"Mosley, Watson and Middleton",39383,52368.82,"Mosley, Watson and Middleton Supplies",SUP003,Germany
+PROD0004,Home Item 4,Home,Wood Ltd,8908,13574.07,Wood Ltd Supplies,SUP004,Germany
+PROD0005,Home Item 5,Home,Padilla-Blake,47918,84078.14,Padilla-Blake Supplies,SUP005,China
+PROD0006,Beauty Item 6,Beauty,Cohen-Montoya,44344,74156.5,Cohen-Montoya Supplies,SUP006,Nigeria
+PROD0007,Beauty Item 7,Beauty,Cruz-Stanley,38683,65787.93,Cruz-Stanley Supplies,SUP007,Germany
+PROD0008,Fashion Item 8,Fashion,Scott Group,7037,8968.12,Scott Group Supplies,SUP008,Germany
+PROD0009,Electronics Item 9,Electronics,Moore Ltd,1022,1837.96,Moore Ltd Supplies,SUP009,Usa
+PROD0010,Beauty Item 10,Beauty,Wagner-Williams,29699,35352.56,Wagner-Williams Supplies,SUP010,Germany
+PROD0011,Groceries Item 11,Groceries,Barnes-Sanchez,8046,13696.66,Barnes-Sanchez Supplies,SUP011,Germany
+PROD0012,Electronics Item 12,Electronics,Williams-Pollard,31887,42370.69,Williams-Pollard Supplies,SUP012,Usa
+PROD0013,Beauty Item 13,Beauty,Adams-Middleton,23289,28759.62,Adams-Middleton Supplies,SUP013,China
+PROD0014,Home Item 14,Home,Miller-Stone,24783,33102.03,Miller-Stone Supplies,SUP014,Usa
+PROD0015,Beauty Item 15,Beauty,Harding PLC,9144,15557.61,Harding PLC Supplies,SUP015,Usa
+PROD0016,Groceries Item 16,Groceries,"Miller, Salazar and Wiggins",2943,3740.86,"Miller, Salazar and Wiggins Supplies",SUP016,China
+PROD0017,Electronics Item 17,Electronics,Dyer LLC,20276,26251.26,Dyer LLC Supplies,SUP017,China
+PROD0018,Home Item 18,Home,George-Burgess,20448,27953.46,George-Burgess Supplies,SUP018,Nigeria
+PROD0019,Electronics Item 19,Electronics,"Flores, Russell and Schwartz",10224,16424.59,"Flores, Russell and Schwartz Supplies",SUP019,China
+PROD0020,Groceries Item 20,Groceries,"Hernandez, Hill and Hammond",37630,42831.42,"Hernandez, Hill and Hammond Supplies",SUP020,China
+PROD0021,Electronics Item 21,Electronics,Campbell Inc,9769,16881.49,Campbell Inc Supplies,SUP021,China
+PROD0022,Fashion Item 22,Fashion,Maddox-Cox,7488,8951.55,Maddox-Cox Supplies,SUP022,China
+PROD0023,Electronics Item 23,Electronics,"Simpson, Khan and Freeman",13871,22383.46,"Simpson, Khan and Freeman Supplies",SUP023,Usa
+PROD0024,Home Item 24,Home,Vance PLC,22344,38005.58,Vance PLC Supplies,SUP024,Germany
+PROD0025,Fashion Item 25,Fashion,"Marsh, Brown and Lynch",35153,56065.0,"Marsh, Brown and Lynch Supplies",SUP025,Germany
+PROD0026,Home Item 26,Home,Reynolds and Sons,12972,17272.7,Reynolds and Sons Supplies,SUP026,Usa
+PROD0027,Fashion Item 27,Fashion,"Hernandez, Daniels and Adams",41656,65578.15,"Hernandez, Daniels and Adams Supplies",SUP027,China
+PROD0028,Home Item 28,Home,"Robinson, Baker and Knight",651,969.19,"Robinson, Baker and Knight Supplies",SUP028,Usa
+PROD0029,Home Item 29,Home,"Orozco, Garner and Mccormick",5669,9897.44,"Orozco, Garner and Mccormick Supplies",SUP029,Germany
+PROD0030,Beauty Item 30,Beauty,Lee-Spencer,14813,26086.69,Lee-Spencer Supplies,SUP030,China
+PROD0031,Fashion Item 31,Fashion,Anderson Ltd,46756,63230.35,Anderson Ltd Supplies,SUP031,Germany
+PROD0032,Fashion Item 32,Fashion,"Vazquez, Wells and Bautista",12896,16527.03,"Vazquez, Wells and Bautista Supplies",SUP032,Usa
+PROD0033,Fashion Item 33,Fashion,"Velasquez, Anderson and Morgan",26488,36328.83,"Velasquez, Anderson and Morgan Supplies",SUP033,Germany
+PROD0034,Electronics Item 34,Electronics,"Smith, Vega and Wilson",5249,6592.62,"Smith, Vega and Wilson Supplies",SUP034,Usa
+PROD0035,Beauty Item 35,Beauty,Carpenter-Hampton,36592,49753.8,Carpenter-Hampton Supplies,SUP035,Germany
+PROD0036,Groceries Item 36,Groceries,Weber Ltd,19939,34358.37,Weber Ltd Supplies,SUP036,China
+PROD0037,Groceries Item 37,Groceries,Zavala Ltd,27199,32918.95,Zavala Ltd Supplies,SUP037,Nigeria
+PROD0038,Groceries Item 38,Groceries,Jones Group,2694,4581.37,Jones Group Supplies,SUP038,Germany
+PROD0039,Groceries Item 39,Groceries,Thomas Ltd,20817,29565.63,Thomas Ltd Supplies,SUP039,Usa
+PROD0040,Groceries Item 40,Groceries,"Johnson, Moody and Carter",17875,24749.8,"Johnson, Moody and Carter Supplies",SUP040,Nigeria
+PROD0041,Electronics Item 41,Electronics,Miller-Dixon,1726,2262.58,Miller-Dixon Supplies,SUP041,Usa
+PROD0042,Home Item 42,Home,Freeman Inc,47306,71224.48,Freeman Inc Supplies,SUP042,Nigeria
+PROD0043,Beauty Item 43,Beauty,Montes LLC,49091,77819.18,Montes LLC Supplies,SUP043,Nigeria
+PROD0044,Home Item 44,Home,Rivers-Nichols,35907,60389.71,Rivers-Nichols Supplies,SUP044,Germany
+PROD0045,Electronics Item 45,Electronics,"Franklin, Walker and Smith",36686,60679.7,"Franklin, Walker and Smith Supplies",SUP045,Nigeria
+PROD0046,Fashion Item 46,Fashion,Carpenter-Kim,47080,75115.79,Carpenter-Kim Supplies,SUP046,Germany
+PROD0047,Groceries Item 47,Groceries,Dixon-Smith,37795,64336.49,Dixon-Smith Supplies,SUP047,Germany
+PROD0048,Home Item 48,Home,Decker Inc,49865,75186.28,Decker Inc Supplies,SUP048,Germany
+PROD0049,Electronics Item 49,Electronics,"Ford, Robinson and Henry",10526,18107.72,"Ford, Robinson and Henry Supplies",SUP049,Nigeria
+PROD0050,Electronics Item 50,Electronics,"Moore, Rivers and Murray",42877,67053.84,"Moore, Rivers and Murray Supplies",SUP050,China
+PROD0051,Home Item 51,Home,"Peterson, Berry and Cook",29214,50320.76,"Peterson, Berry and Cook Supplies",SUP051,Nigeria
+PROD0052,Electronics Item 52,Electronics,"Martinez, Rice and Perry",31027,39852.54,"Martinez, Rice and Perry Supplies",SUP052,Germany
+PROD0053,Electronics Item 53,Electronics,"Medina, Drake and Torres",20298,25280.91,"Medina, Drake and Torres Supplies",SUP053,Germany
+PROD0054,Fashion Item 54,Fashion,Nichols LLC,4330,5233.31,Nichols LLC Supplies,SUP054,Germany
+PROD0055,Beauty Item 55,Beauty,"Webster, Luna and Taylor",24526,43241.16,"Webster, Luna and Taylor Supplies",SUP055,China
+PROD0056,Groceries Item 56,Groceries,"Goodwin, Hanson and Wilson",11115,18568.13,"Goodwin, Hanson and Wilson Supplies",SUP056,Germany
+PROD0057,Beauty Item 57,Beauty,Nielsen-Clark,18871,26334.24,Nielsen-Clark Supplies,SUP057,Usa
+PROD0058,Fashion Item 58,Fashion,Hill-Parker,12373,17494.42,Hill-Parker Supplies,SUP058,Nigeria
+PROD0059,Fashion Item 59,Fashion,Stone PLC,48330,82668.39,Stone PLC Supplies,SUP059,China
+PROD0060,Groceries Item 60,Groceries,"Hughes, Marks and Lopez",13539,16798.23,"Hughes, Marks and Lopez Supplies",SUP060,Germany
+PROD0061,Beauty Item 61,Beauty,Vargas-Davis,10547,16205.74,Vargas-Davis Supplies,SUP061,Usa
+PROD0062,Groceries Item 62,Groceries,Choi Ltd,1110,1326.9,Choi Ltd Supplies,SUP062,China
+PROD0063,Groceries Item 63,Groceries,Jones-Brown,22139,30571.54,Jones-Brown Supplies,SUP063,China
+PROD0064,Electronics Item 64,Electronics,Henderson-Potter,14624,18178.92,Henderson-Potter Supplies,SUP064,Germany
+PROD0065,Electronics Item 65,Electronics,"Tyler, Salazar and Mitchell",15555,17349.68,"Tyler, Salazar and Mitchell Supplies",SUP065,Usa
+PROD0066,Groceries Item 66,Groceries,Foley-Jacobs,17122,23727.74,Foley-Jacobs Supplies,SUP066,Nigeria
+PROD0067,Home Item 67,Home,Johnson-Johnson,4938,7969.16,Johnson-Johnson Supplies,SUP067,Germany
+PROD0068,Electronics Item 68,Electronics,Deleon and Sons,44430,76892.01,Deleon and Sons Supplies,SUP068,Germany
+PROD0069,Home Item 69,Home,Burke-Turner,24433,42830.32,Burke-Turner Supplies,SUP069,China
+PROD0070,Electronics Item 70,Electronics,Delgado LLC,29174,49570.48,Delgado LLC Supplies,SUP070,China
+PROD0071,Groceries Item 71,Groceries,Johnson PLC,31851,48629.18,Johnson PLC Supplies,SUP071,Germany
+PROD0072,Fashion Item 72,Fashion,Hopkins Inc,49711,83001.54,Hopkins Inc Supplies,SUP072,Germany
+PROD0073,Groceries Item 73,Groceries,Coleman-Cantrell,49546,56465.89,Coleman-Cantrell Supplies,SUP073,Germany
+PROD0074,Fashion Item 74,Fashion,Gutierrez-Mccullough,42558,57842.13,Gutierrez-Mccullough Supplies,SUP074,Nigeria
+PROD0075,Electronics Item 75,Electronics,Mendez Inc,5627,9898.42,Mendez Inc Supplies,SUP075,China
+PROD0076,Groceries Item 76,Groceries,Kim-Carlson,15627,25226.69,Kim-Carlson Supplies,SUP076,Nigeria
+PROD0077,Beauty Item 77,Beauty,Jennings-Evans,17428,29126.46,Jennings-Evans Supplies,SUP077,Nigeria
+PROD0078,Groceries Item 78,Groceries,Lin-Wheeler,15900,17813.25,Lin-Wheeler Supplies,SUP078,China
+PROD0079,Fashion Item 79,Fashion,Perez Inc,47472,82721.38,Perez Inc Supplies,SUP079,China
+PROD0080,Groceries Item 80,Groceries,Thompson and Sons,3558,4230.25,Thompson and Sons Supplies,SUP080,China
+PROD0081,Fashion Item 81,Fashion,"Stevens, Blackburn and Wells",30545,35055.61,"Stevens, Blackburn and Wells Supplies",SUP081,China
+PROD0082,Beauty Item 82,Beauty,"Harris, Glass and Welch",49088,81388.61,"Harris, Glass and Welch Supplies",SUP082,Germany
+PROD0083,Electronics Item 83,Electronics,Cummings-Warren,6455,9152.89,Cummings-Warren Supplies,SUP083,Usa
+PROD0084,Groceries Item 84,Groceries,Cooper-Harris,11209,17523.5,Cooper-Harris Supplies,SUP084,Usa
+PROD0085,Groceries Item 85,Groceries,"Rios, Burns and Floyd",19680,22365.99,"Rios, Burns and Floyd Supplies",SUP085,Nigeria
+PROD0086,Fashion Item 86,Fashion,"Vargas, Erickson and Brown",4333,6098.88,"Vargas, Erickson and Brown Supplies",SUP086,Nigeria
+PROD0087,Home Item 87,Home,Fischer-Smith,17470,27294.91,Fischer-Smith Supplies,SUP087,Nigeria
+PROD0088,Beauty Item 88,Beauty,"Williams, Jones and Harris",30814,49633.75,"Williams, Jones and Harris Supplies",SUP088,Germany
+PROD0089,Electronics Item 89,Electronics,"Mills, Nelson and Burke",31713,49140.41,"Mills, Nelson and Burke Supplies",SUP089,Usa
+PROD0090,Home Item 90,Home,"Whitney, Johnson and Smith",21544,36137.65,"Whitney, Johnson and Smith Supplies",SUP090,Nigeria
+PROD0091,Home Item 91,Home,Boyd-Smith,7438,11421.86,Boyd-Smith Supplies,SUP091,Nigeria
+PROD0092,Beauty Item 92,Beauty,Townsend PLC,12485,21823.3,Townsend PLC Supplies,SUP092,Germany
+PROD0093,Electronics Item 93,Electronics,Baxter Group,25817,34900.26,Baxter Group Supplies,SUP093,China
+PROD0094,Beauty Item 94,Beauty,Caldwell-Wright,15402,22729.9,Caldwell-Wright Supplies,SUP094,Usa
+PROD0095,Home Item 95,Home,Johnston-Andersen,10598,17508.25,Johnston-Andersen Supplies,SUP095,Usa
+PROD0096,Home Item 96,Home,Greene-Jarvis,41717,50220.45,Greene-Jarvis Supplies,SUP096,Germany
+PROD0097,Beauty Item 97,Beauty,Rangel Group,4700,5761.8,Rangel Group Supplies,SUP097,Nigeria
+PROD0098,Fashion Item 98,Fashion,Moore LLC,39742,44831.85,Moore LLC Supplies,SUP098,Nigeria
+PROD0099,Beauty Item 99,Beauty,"Moore, Simmons and King",45594,61108.25,"Moore, Simmons and King Supplies",SUP099,China
+PROD0100,Home Item 100,Home,Garcia PLC,35481,46026.78,Garcia PLC Supplies,SUP100,Nigeria
+PROD0101,Fashion Item 101,Fashion,Thomas-Bryant,33735,54222.1,Thomas-Bryant Supplies,SUP101,China
+PROD0102,Groceries Item 102,Groceries,Myers Inc,16713,24063.84,Myers Inc Supplies,SUP102,Nigeria
+PROD0103,Groceries Item 103,Groceries,Mckinney PLC,30080,45161.58,Mckinney PLC Supplies,SUP103,Nigeria
+PROD0104,Electronics Item 104,Electronics,"Lamb, Lopez and Bryant",12709,14867.13,"Lamb, Lopez and Bryant Supplies",SUP104,Usa
+PROD0105,Electronics Item 105,Electronics,Jones Ltd,6132,10948.86,Jones Ltd Supplies,SUP105,China
+PROD0106,Electronics Item 106,Electronics,"Williams, Williams and Greene",35294,50135.93,"Williams, Williams and Greene Supplies",SUP106,Germany
+PROD0107,Beauty Item 107,Beauty,"Carter, Hernandez and Schmidt",3250,4111.23,"Carter, Hernandez and Schmidt Supplies",SUP107,China
+PROD0108,Fashion Item 108,Fashion,Myers and Sons,45612,67823.18,Myers and Sons Supplies,SUP108,Germany
+PROD0109,Beauty Item 109,Beauty,Roberts-Moreno,3776,5923.51,Roberts-Moreno Supplies,SUP109,Germany
+PROD0110,Electronics Item 110,Electronics,Christian-Steele,30280,51431.8,Christian-Steele Supplies,SUP110,China
+PROD0111,Home Item 111,Home,"Lucas, Fisher and Duncan",19593,31064.9,"Lucas, Fisher and Duncan Supplies",SUP111,China
+PROD0112,Groceries Item 112,Groceries,"Smith, Nelson and Ortiz",39707,47876.14,"Smith, Nelson and Ortiz Supplies",SUP112,Nigeria
+PROD0113,Electronics Item 113,Electronics,"Nash, Richmond and Rhodes",39019,69459.17,"Nash, Richmond and Rhodes Supplies",SUP113,Germany
+PROD0114,Beauty Item 114,Beauty,Figueroa Ltd,17003,26968.65,Figueroa Ltd Supplies,SUP114,Nigeria
+PROD0115,Groceries Item 115,Groceries,Diaz-Martin,39702,52519.3,Diaz-Martin Supplies,SUP115,Germany
+PROD0116,Electronics Item 116,Electronics,Sims PLC,32874,38509.15,Sims PLC Supplies,SUP116,Germany
+PROD0117,Groceries Item 117,Groceries,Robertson LLC,9812,17011.27,Robertson LLC Supplies,SUP117,China
+PROD0118,Home Item 118,Home,Cooke Inc,49549,63332.0,Cooke Inc Supplies,SUP118,Germany
+PROD0119,Groceries Item 119,Groceries,"Becker, Williams and Barnes",37040,52525.77,"Becker, Williams and Barnes Supplies",SUP119,Usa
+PROD0120,Groceries Item 120,Groceries,Ward LLC,1906,2577.87,Ward LLC Supplies,SUP120,Usa
+PROD0121,Fashion Item 121,Fashion,Vasquez-Russell,10307,12379.11,Vasquez-Russell Supplies,SUP121,Usa
+PROD0122,Home Item 122,Home,"Oneill, Bender and Mills",12044,16425.84,"Oneill, Bender and Mills Supplies",SUP122,Usa
+PROD0123,Fashion Item 123,Fashion,"Rodriguez, Cuevas and Johnson",45398,75707.35,"Rodriguez, Cuevas and Johnson Supplies",SUP123,Germany
+PROD0124,Beauty Item 124,Beauty,Briggs-Knapp,42839,58593.05,Briggs-Knapp Supplies,SUP124,China
+PROD0125,Groceries Item 125,Groceries,Mcknight Group,13299,21518.13,Mcknight Group Supplies,SUP125,Germany
+PROD0126,Electronics Item 126,Electronics,"Smith, Gonzalez and Cooper",45874,67788.24,"Smith, Gonzalez and Cooper Supplies",SUP126,Nigeria
+PROD0127,Groceries Item 127,Groceries,Sandoval-Hamilton,13761,24540.18,Sandoval-Hamilton Supplies,SUP127,Usa
+PROD0128,Fashion Item 128,Fashion,"Robinson, Browning and Lee",20294,28613.99,"Robinson, Browning and Lee Supplies",SUP128,Usa
+PROD0129,Electronics Item 129,Electronics,"Callahan, Mejia and Fisher",20470,29713.07,"Callahan, Mejia and Fisher Supplies",SUP129,Usa
+PROD0130,Beauty Item 130,Beauty,Smith-Kline,33208,48350.92,Smith-Kline Supplies,SUP130,Germany
+PROD0131,Beauty Item 131,Beauty,Davis-Simpson,22165,24563.71,Davis-Simpson Supplies,SUP131,Nigeria
+PROD0132,Home Item 132,Home,Williams-Rodriguez,1863,3098.37,Williams-Rodriguez Supplies,SUP132,Usa
+PROD0133,Electronics Item 133,Electronics,Snyder-Nash,25022,38276.02,Snyder-Nash Supplies,SUP133,Usa
+PROD0134,Home Item 134,Home,"Roberts, Porter and Roberts",33758,53305.51,"Roberts, Porter and Roberts Supplies",SUP134,Usa
+PROD0135,Electronics Item 135,Electronics,Miller-Garcia,40613,66453.51,Miller-Garcia Supplies,SUP135,Nigeria
+PROD0136,Fashion Item 136,Fashion,Steele Group,12916,21332.27,Steele Group Supplies,SUP136,Germany
+PROD0137,Home Item 137,Home,"Miller, Shannon and Johnson",33060,42322.26,"Miller, Shannon and Johnson Supplies",SUP137,Usa
+PROD0138,Groceries Item 138,Groceries,Mcgrath Group,26534,37120.99,Mcgrath Group Supplies,SUP138,Nigeria
+PROD0139,Groceries Item 139,Groceries,Berry-Wilson,10983,19366.76,Berry-Wilson Supplies,SUP139,Nigeria
+PROD0140,Beauty Item 140,Beauty,Mckenzie Group,49067,64845.61,Mckenzie Group Supplies,SUP140,Nigeria
+PROD0141,Groceries Item 141,Groceries,"Myers, West and Thomas",18064,22209.52,"Myers, West and Thomas Supplies",SUP141,China
+PROD0142,Home Item 142,Home,Butler-Taylor,31574,41779.81,Butler-Taylor Supplies,SUP142,Usa
+PROD0143,Groceries Item 143,Groceries,Jackson-Schwartz,10986,19098.44,Jackson-Schwartz Supplies,SUP143,China
+PROD0144,Beauty Item 144,Beauty,"Greer, Ortiz and Davenport",10567,11753.42,"Greer, Ortiz and Davenport Supplies",SUP144,Usa
+PROD0145,Electronics Item 145,Electronics,Greene and Sons,26672,35860.58,Greene and Sons Supplies,SUP145,Germany
+PROD0146,Electronics Item 146,Electronics,Hughes-Lowery,9790,16316.65,Hughes-Lowery Supplies,SUP146,Germany
+PROD0147,Groceries Item 147,Groceries,Whitaker-Schultz,2320,3614.29,Whitaker-Schultz Supplies,SUP147,Germany
+PROD0148,Beauty Item 148,Beauty,Brown-Cherry,48021,83998.93,Brown-Cherry Supplies,SUP148,China
+PROD0149,Groceries Item 149,Groceries,"Gilbert, Brown and Bennett",39331,51133.69,"Gilbert, Brown and Bennett Supplies",SUP149,Usa
+PROD0150,Electronics Item 150,Electronics,"Reed, Carter and Chung",21640,37801.67,"Reed, Carter and Chung Supplies",SUP150,Usa
+PROD0151,Home Item 151,Home,"Perry, Spencer and Jackson",14810,16726.84,"Perry, Spencer and Jackson Supplies",SUP151,Nigeria
+PROD0152,Beauty Item 152,Beauty,Lin-Joyce,21323,28169.03,Lin-Joyce Supplies,SUP152,Usa
+PROD0153,Beauty Item 153,Beauty,White PLC,26860,33919.18,White PLC Supplies,SUP153,China
+PROD0154,Groceries Item 154,Groceries,Mendoza Inc,30861,48385.81,Mendoza Inc Supplies,SUP154,Germany
+PROD0155,Groceries Item 155,Groceries,Carr Inc,42820,59349.54,Carr Inc Supplies,SUP155,China
+PROD0156,Beauty Item 156,Beauty,Young-Moran,47864,62589.9,Young-Moran Supplies,SUP156,Germany
+PROD0157,Groceries Item 157,Groceries,Deleon-Gillespie,3301,4628.08,Deleon-Gillespie Supplies,SUP157,Germany
+PROD0158,Electronics Item 158,Electronics,Martinez Ltd,22469,35147.62,Martinez Ltd Supplies,SUP158,Usa
+PROD0159,Beauty Item 159,Beauty,Day Ltd,34209,38278.07,Day Ltd Supplies,SUP159,China
+PROD0160,Beauty Item 160,Beauty,"Lewis, Perry and Bailey",22758,26580.6,"Lewis, Perry and Bailey Supplies",SUP160,Nigeria
+PROD0161,Groceries Item 161,Groceries,"Diaz, Sims and Watson",47938,56321.32,"Diaz, Sims and Watson Supplies",SUP161,China
+PROD0162,Beauty Item 162,Beauty,Moore-Ellis,3150,3561.16,Moore-Ellis Supplies,SUP162,Nigeria
+PROD0163,Beauty Item 163,Beauty,"Henderson, Cantu and Martinez",35524,60254.65,"Henderson, Cantu and Martinez Supplies",SUP163,Nigeria
+PROD0164,Groceries Item 164,Groceries,"Warner, Booker and Pineda",46661,79271.32,"Warner, Booker and Pineda Supplies",SUP164,China
+PROD0165,Electronics Item 165,Electronics,"Anderson, Sandoval and Bryan",42598,49353.85,"Anderson, Sandoval and Bryan Supplies",SUP165,Germany
+PROD0166,Groceries Item 166,Groceries,"Clarke, Henry and Sandoval",6684,11796.12,"Clarke, Henry and Sandoval Supplies",SUP166,Germany
+PROD0167,Groceries Item 167,Groceries,Olson-Adams,5498,7479.91,Olson-Adams Supplies,SUP167,China
+PROD0168,Fashion Item 168,Fashion,Navarro and Sons,34012,53192.13,Navarro and Sons Supplies,SUP168,Nigeria
+PROD0169,Electronics Item 169,Electronics,Kaiser-Burch,47111,64105.95,Kaiser-Burch Supplies,SUP169,Nigeria
+PROD0170,Groceries Item 170,Groceries,Gentry-Ward,29037,42986.6,Gentry-Ward Supplies,SUP170,China
+PROD0171,Beauty Item 171,Beauty,Garcia LLC,33235,59623.71,Garcia LLC Supplies,SUP171,China
+PROD0172,Fashion Item 172,Fashion,"Gordon, Walker and Ingram",1052,1233.77,"Gordon, Walker and Ingram Supplies",SUP172,Usa
+PROD0173,Beauty Item 173,Beauty,"Hunter, Alexander and White",7691,11317.97,"Hunter, Alexander and White Supplies",SUP173,Germany
+PROD0174,Fashion Item 174,Fashion,Smith LLC,36955,54547.93,Smith LLC Supplies,SUP174,Germany
+PROD0175,Home Item 175,Home,Lee and Sons,20770,37223.48,Lee and Sons Supplies,SUP175,Nigeria
+PROD0176,Groceries Item 176,Groceries,"Martin, Ray and Hooper",44652,49147.21,"Martin, Ray and Hooper Supplies",SUP176,Usa
+PROD0177,Home Item 177,Home,Lang PLC,12143,18202.5,Lang PLC Supplies,SUP177,Usa
+PROD0178,Beauty Item 178,Beauty,Adams Group,33125,46692.04,Adams Group Supplies,SUP178,Usa
+PROD0179,Beauty Item 179,Beauty,"Benitez, Fleming and Baker",31986,40660.17,"Benitez, Fleming and Baker Supplies",SUP179,Usa
+PROD0180,Fashion Item 180,Fashion,Hawkins Inc,34629,46025.56,Hawkins Inc Supplies,SUP180,Germany
+PROD0181,Home Item 181,Home,Green-Riggs,42299,58423.74,Green-Riggs Supplies,SUP181,Germany
+PROD0182,Home Item 182,Home,"Reed, Jimenez and Powell",49582,65326.99,"Reed, Jimenez and Powell Supplies",SUP182,Usa
+PROD0183,Electronics Item 183,Electronics,"Wilson, Harris and Sutton",39545,55550.49,"Wilson, Harris and Sutton Supplies",SUP183,China
+PROD0184,Groceries Item 184,Groceries,"Diaz, George and Fox",14767,19305.43,"Diaz, George and Fox Supplies",SUP184,Germany
+PROD0185,Groceries Item 185,Groceries,Meyer-Williams,7826,11953.12,Meyer-Williams Supplies,SUP185,Nigeria
+PROD0186,Home Item 186,Home,"Pierce, Sharp and Valdez",9991,12242.29,"Pierce, Sharp and Valdez Supplies",SUP186,Germany
+PROD0187,Groceries Item 187,Groceries,"Brown, Todd and Gilmore",12494,13893.02,"Brown, Todd and Gilmore Supplies",SUP187,China
+PROD0188,Electronics Item 188,Electronics,Sandoval-Bryant,3480,4520.61,Sandoval-Bryant Supplies,SUP188,Nigeria
+PROD0189,Beauty Item 189,Beauty,French and Sons,17076,25141.48,French and Sons Supplies,SUP189,Germany
+PROD0190,Electronics Item 190,Electronics,"Glass, Ramirez and Burch",18942,30551.88,"Glass, Ramirez and Burch Supplies",SUP190,China
+PROD0191,Beauty Item 191,Beauty,Benson-Tucker,37747,61933.01,Benson-Tucker Supplies,SUP191,Germany
+PROD0192,Electronics Item 192,Electronics,Smith Group,6401,9151.78,Smith Group Supplies,SUP192,Usa
+PROD0193,Beauty Item 193,Beauty,"Guerrero, Lopez and Flores",29762,35934.55,"Guerrero, Lopez and Flores Supplies",SUP193,Germany
+PROD0194,Home Item 194,Home,Rosales PLC,39043,59602.55,Rosales PLC Supplies,SUP194,Nigeria
+PROD0195,Beauty Item 195,Beauty,Murphy-Morris,18698,28098.55,Murphy-Morris Supplies,SUP195,Usa
+PROD0196,Beauty Item 196,Beauty,Flynn Ltd,6826,10622.49,Flynn Ltd Supplies,SUP196,China
+PROD0197,Beauty Item 197,Beauty,Fischer-Santos,46264,57340.24,Fischer-Santos Supplies,SUP197,China
+PROD0198,Beauty Item 198,Beauty,Moreno-Potts,1804,2056.4,Moreno-Potts Supplies,SUP198,Nigeria
+PROD0199,Home Item 199,Home,"Patterson, Vargas and Manning",28172,39071.04,"Patterson, Vargas and Manning Supplies",SUP199,Nigeria
+PROD0200,Groceries Item 200,Groceries,Barrera Group,46783,51531.08,Barrera Group Supplies,SUP200,Nigeria
+PROD0201,Electronics Item 201,Electronics,"Ramos, Pena and Andrews",23295,40891.4,"Ramos, Pena and Andrews Supplies",SUP201,Germany
+PROD0202,Groceries Item 202,Groceries,Hanna-Carr,35839,47868.8,Hanna-Carr Supplies,SUP202,Usa
+PROD0203,Beauty Item 203,Beauty,"Harris, Jones and Russo",26454,32590.97,"Harris, Jones and Russo Supplies",SUP203,Nigeria
+PROD0204,Electronics Item 204,Electronics,Andrews and Sons,752,996.58,Andrews and Sons Supplies,SUP204,China
+PROD0205,Electronics Item 205,Electronics,Cannon-Singh,21906,36511.37,Cannon-Singh Supplies,SUP205,Usa
+PROD0206,Fashion Item 206,Fashion,Matthews and Sons,16508,28400.48,Matthews and Sons Supplies,SUP206,China
+PROD0207,Groceries Item 207,Groceries,Weber-Rodriguez,36533,58337.69,Weber-Rodriguez Supplies,SUP207,China
+PROD0208,Fashion Item 208,Fashion,Mason-Anderson,36751,58154.0,Mason-Anderson Supplies,SUP208,Usa
+PROD0209,Home Item 209,Home,Mills PLC,40866,49841.86,Mills PLC Supplies,SUP209,Nigeria
+PROD0210,Beauty Item 210,Beauty,Curry-Ortega,40572,46402.74,Curry-Ortega Supplies,SUP210,Germany
+PROD0211,Home Item 211,Home,"Wells, Crawford and Phillips",26590,39188.0,"Wells, Crawford and Phillips Supplies",SUP211,Nigeria
+PROD0212,Home Item 212,Home,Moss-Ellis,11248,18849.9,Moss-Ellis Supplies,SUP212,Germany
+PROD0213,Home Item 213,Home,Hartman PLC,16495,28049.02,Hartman PLC Supplies,SUP213,Germany
+PROD0214,Groceries Item 214,Groceries,Smith LLC,36925,66282.61,Smith LLC Supplies,SUP174,Germany
+PROD0215,Groceries Item 215,Groceries,"Sullivan, Nguyen and Young",33372,50945.35,"Sullivan, Nguyen and Young Supplies",SUP214,Germany
+PROD0216,Home Item 216,Home,Ford Ltd,44617,73739.53,Ford Ltd Supplies,SUP215,Usa
+PROD0217,Groceries Item 217,Groceries,Maynard PLC,14556,24311.29,Maynard PLC Supplies,SUP216,Nigeria
+PROD0218,Home Item 218,Home,Moore Group,49454,57283.12,Moore Group Supplies,SUP217,Germany
+PROD0219,Fashion Item 219,Fashion,"Holt, Schneider and Dickson",42115,49688.6,"Holt, Schneider and Dickson Supplies",SUP218,Usa
+PROD0220,Beauty Item 220,Beauty,Scott-Shelton,49654,83369.37,Scott-Shelton Supplies,SUP219,Germany
+PROD0221,Home Item 221,Home,Adams and Sons,12102,16680.85,Adams and Sons Supplies,SUP220,Germany
+PROD0222,Electronics Item 222,Electronics,Dyer LLC,16741,23501.64,Dyer LLC Supplies,SUP017,China
+PROD0223,Fashion Item 223,Fashion,Porter-Andrews,7621,8387.48,Porter-Andrews Supplies,SUP221,Usa
+PROD0224,Electronics Item 224,Electronics,Williams Group,12943,15642.09,Williams Group Supplies,SUP222,Germany
+PROD0225,Beauty Item 225,Beauty,"Mayer, Nunez and Fitzgerald",10779,13374.45,"Mayer, Nunez and Fitzgerald Supplies",SUP223,Usa
+PROD0226,Groceries Item 226,Groceries,Mason Ltd,47482,72464.26,Mason Ltd Supplies,SUP224,Germany
+PROD0227,Electronics Item 227,Electronics,"Washington, Griffith and Munoz",44607,65946.76,"Washington, Griffith and Munoz Supplies",SUP225,Germany
+PROD0228,Beauty Item 228,Beauty,"Wiggins, Santiago and Simon",48412,86152.62,"Wiggins, Santiago and Simon Supplies",SUP226,Germany
+PROD0229,Fashion Item 229,Fashion,Franco-Rivera,12744,18131.66,Franco-Rivera Supplies,SUP227,China
+PROD0230,Beauty Item 230,Beauty,Hawkins-Johnson,48231,81958.79,Hawkins-Johnson Supplies,SUP228,Nigeria
+PROD0231,Beauty Item 231,Beauty,Williams Inc,31752,42158.93,Williams Inc Supplies,SUP229,Germany
+PROD0232,Electronics Item 232,Electronics,Norton-Booker,27111,47901.54,Norton-Booker Supplies,SUP230,Nigeria
+PROD0233,Home Item 233,Home,"Russell, Schultz and Solis",32809,44946.69,"Russell, Schultz and Solis Supplies",SUP231,Germany
+PROD0234,Electronics Item 234,Electronics,"Wilson, Davis and Manning",28188,45914.37,"Wilson, Davis and Manning Supplies",SUP232,Germany
+PROD0235,Fashion Item 235,Fashion,Fleming LLC,38642,47024.75,Fleming LLC Supplies,SUP233,Germany
+PROD0236,Beauty Item 236,Beauty,Thomas Ltd,34752,40670.81,Thomas Ltd Supplies,SUP039,Usa
+PROD0237,Fashion Item 237,Fashion,"Johnson, Patel and Miller",16711,27393.13,"Johnson, Patel and Miller Supplies",SUP234,China
+PROD0238,Beauty Item 238,Beauty,"Brown, Villarreal and Daniel",8851,12630.04,"Brown, Villarreal and Daniel Supplies",SUP235,Nigeria
+PROD0239,Home Item 239,Home,Ramirez-Hart,27353,32324.28,Ramirez-Hart Supplies,SUP236,Germany
+PROD0240,Beauty Item 240,Beauty,Carlson-Holmes,46033,54202.4,Carlson-Holmes Supplies,SUP237,Germany
+PROD0241,Beauty Item 241,Beauty,"Young, Davis and Benson",27959,42097.55,"Young, Davis and Benson Supplies",SUP238,Usa
+PROD0242,Beauty Item 242,Beauty,Williamson-Moore,42656,54295.32,Williamson-Moore Supplies,SUP239,China
+PROD0243,Fashion Item 243,Fashion,"Hardy, Craig and Horton",23433,36614.5,"Hardy, Craig and Horton Supplies",SUP240,China
+PROD0244,Groceries Item 244,Groceries,Olson-Vance,48631,76491.21,Olson-Vance Supplies,SUP241,Usa
+PROD0245,Groceries Item 245,Groceries,Tucker-Robbins,46473,63833.1,Tucker-Robbins Supplies,SUP242,China
+PROD0246,Fashion Item 246,Fashion,Kemp-Lee,46108,81488.45,Kemp-Lee Supplies,SUP243,Nigeria
+PROD0247,Home Item 247,Home,"Price, Mcgee and Perez",35487,48586.34,"Price, Mcgee and Perez Supplies",SUP244,China
+PROD0248,Groceries Item 248,Groceries,"Houston, Combs and Dunlap",40584,69354.58,"Houston, Combs and Dunlap Supplies",SUP245,Nigeria
+PROD0249,Beauty Item 249,Beauty,Reyes-Rubio,6673,7986.62,Reyes-Rubio Supplies,SUP246,China
+PROD0250,Home Item 250,Home,Norton-Rogers,13878,18258.36,Norton-Rogers Supplies,SUP247,China
+PROD0251,Beauty Item 251,Beauty,Horton Ltd,39374,58897.72,Horton Ltd Supplies,SUP248,Germany
+PROD0252,Groceries Item 252,Groceries,Brown Inc,23006,30558.99,Brown Inc Supplies,SUP249,Germany
+PROD0253,Beauty Item 253,Beauty,Thomas-Gilbert,18380,28853.18,Thomas-Gilbert Supplies,SUP250,Usa
+PROD0254,Electronics Item 254,Electronics,Hood PLC,29620,47887.3,Hood PLC Supplies,SUP251,Usa
+PROD0255,Groceries Item 255,Groceries,Martinez Ltd,38467,65515.35,Martinez Ltd Supplies,SUP158,Usa
+PROD0256,Electronics Item 256,Electronics,"Jackson, Williams and Hall",29666,38200.37,"Jackson, Williams and Hall Supplies",SUP252,Germany
+PROD0257,Home Item 257,Home,Cardenas LLC,9853,16113.42,Cardenas LLC Supplies,SUP253,Usa
+PROD0258,Home Item 258,Home,Castro PLC,28225,42709.67,Castro PLC Supplies,SUP254,Nigeria
+PROD0259,Fashion Item 259,Fashion,Myers and Sons,4624,7560.84,Myers and Sons Supplies,SUP108,Germany
+PROD0260,Beauty Item 260,Beauty,Dawson-Turner,41049,56542.95,Dawson-Turner Supplies,SUP255,Nigeria
+PROD0261,Electronics Item 261,Electronics,Davis-Campbell,37359,41195.51,Davis-Campbell Supplies,SUP256,Germany
+PROD0262,Beauty Item 262,Beauty,"Johnson, Smith and Nichols",30468,40062.24,"Johnson, Smith and Nichols Supplies",SUP257,China
+PROD0263,Home Item 263,Home,Rivera and Sons,17205,25659.62,Rivera and Sons Supplies,SUP258,Usa
+PROD0264,Beauty Item 264,Beauty,"Powell, Allen and Spencer",37919,49255.21,"Powell, Allen and Spencer Supplies",SUP259,Germany
+PROD0265,Fashion Item 265,Fashion,"Lopez, Jones and Stephens",5432,9601.2,"Lopez, Jones and Stephens Supplies",SUP260,Usa
+PROD0266,Groceries Item 266,Groceries,Lee Group,40363,67058.6,Lee Group Supplies,SUP261,China
+PROD0267,Fashion Item 267,Fashion,Mitchell-Mcdaniel,7875,10927.88,Mitchell-Mcdaniel Supplies,SUP262,Usa
+PROD0268,Groceries Item 268,Groceries,"Griffin, Miller and Lopez",19438,32796.32,"Griffin, Miller and Lopez Supplies",SUP263,China
+PROD0269,Beauty Item 269,Beauty,Gill and Sons,41782,56002.67,Gill and Sons Supplies,SUP264,Usa
+PROD0270,Home Item 270,Home,Dean-Barajas,48542,73156.07,Dean-Barajas Supplies,SUP265,Germany
+PROD0271,Beauty Item 271,Beauty,Wilson PLC,7500,13485.52,Wilson PLC Supplies,SUP266,Usa
+PROD0272,Fashion Item 272,Fashion,Bryant PLC,38791,57162.14,Bryant PLC Supplies,SUP267,Usa
+PROD0273,Fashion Item 273,Fashion,Davis-Church,19506,25771.83,Davis-Church Supplies,SUP268,Nigeria
+PROD0274,Beauty Item 274,Beauty,Phillips Group,11422,17864.2,Phillips Group Supplies,SUP269,Germany
+PROD0275,Beauty Item 275,Beauty,"Flores, Smith and Taylor",26353,45144.98,"Flores, Smith and Taylor Supplies",SUP270,China
+PROD0276,Fashion Item 276,Fashion,Dominguez-Newton,11700,13838.61,Dominguez-Newton Supplies,SUP271,Nigeria
+PROD0277,Electronics Item 277,Electronics,Daniels PLC,11249,15511.58,Daniels PLC Supplies,SUP272,Nigeria
+PROD0278,Home Item 278,Home,"Martinez, King and Reyes",3061,4217.13,"Martinez, King and Reyes Supplies",SUP273,Nigeria
+PROD0279,Fashion Item 279,Fashion,Campos PLC,36733,55881.2,Campos PLC Supplies,SUP274,Nigeria
+PROD0280,Electronics Item 280,Electronics,"Marshall, Barton and Stein",1684,2842.44,"Marshall, Barton and Stein Supplies",SUP275,Usa
+PROD0281,Groceries Item 281,Groceries,Cooper-Carter,18231,26877.03,Cooper-Carter Supplies,SUP276,Germany
+PROD0282,Fashion Item 282,Fashion,Jones Group,23999,35135.94,Jones Group Supplies,SUP038,Germany
+PROD0283,Groceries Item 283,Groceries,Casey-Martinez,535,796.83,Casey-Martinez Supplies,SUP277,Usa
+PROD0284,Beauty Item 284,Beauty,Ray-Phillips,38060,56666.82,Ray-Phillips Supplies,SUP278,Germany
+PROD0285,Electronics Item 285,Electronics,"Vazquez, Larsen and Le",22119,31801.09,"Vazquez, Larsen and Le Supplies",SUP279,China
+PROD0286,Beauty Item 286,Beauty,"Woods, Jenkins and Johnson",36614,46348.67,"Woods, Jenkins and Johnson Supplies",SUP280,Usa
+PROD0287,Beauty Item 287,Beauty,Lester-Ellis,48793,69852.49,Lester-Ellis Supplies,SUP281,Usa
+PROD0288,Electronics Item 288,Electronics,Duran Ltd,36763,49385.32,Duran Ltd Supplies,SUP282,Germany
+PROD0289,Groceries Item 289,Groceries,Lucero LLC,1454,1751.44,Lucero LLC Supplies,SUP283,Germany
+PROD0290,Home Item 290,Home,Oneill-Henry,24784,43140.0,Oneill-Henry Supplies,SUP284,Germany
+PROD0291,Electronics Item 291,Electronics,Poole-Whitney,541,675.71,Poole-Whitney Supplies,SUP285,Usa
+PROD0292,Fashion Item 292,Fashion,Yang-Chavez,47699,65503.33,Yang-Chavez Supplies,SUP286,China
+PROD0293,Home Item 293,Home,Chavez and Sons,7173,10863.66,Chavez and Sons Supplies,SUP287,Germany
+PROD0294,Beauty Item 294,Beauty,Juarez PLC,23823,36962.21,Juarez PLC Supplies,SUP288,Nigeria
+PROD0295,Electronics Item 295,Electronics,"Ball, Parsons and Kirk",23924,32804.15,"Ball, Parsons and Kirk Supplies",SUP289,Usa
+PROD0296,Electronics Item 296,Electronics,Chaney-Anderson,37066,47546.1,Chaney-Anderson Supplies,SUP290,Germany
+PROD0297,Beauty Item 297,Beauty,"Shah, Campos and Howard",13055,21904.04,"Shah, Campos and Howard Supplies",SUP291,Nigeria
+PROD0298,Beauty Item 298,Beauty,Cooley-Garcia,44079,74549.47,Cooley-Garcia Supplies,SUP292,Usa
+PROD0299,Fashion Item 299,Fashion,Williams and Sons,28811,40743.88,Williams and Sons Supplies,SUP293,Germany
+PROD0300,Electronics Item 300,Electronics,Davis-Moore,33441,54603.1,Davis-Moore Supplies,SUP294,Germany
+PROD0301,Electronics Item 301,Electronics,Torres-Allison,43336,51258.71,Torres-Allison Supplies,SUP295,China
+PROD0302,Home Item 302,Home,"Rose, Ford and Sanchez",11116,15452.48,"Rose, Ford and Sanchez Supplies",SUP296,Nigeria
+PROD0303,Electronics Item 303,Electronics,Taylor-Taylor,2546,3001.99,Taylor-Taylor Supplies,SUP297,Nigeria
+PROD0304,Groceries Item 304,Groceries,Campbell Ltd,28531,38820.79,Campbell Ltd Supplies,SUP298,Nigeria
+PROD0305,Electronics Item 305,Electronics,Wagner Ltd,3619,4565.91,Wagner Ltd Supplies,SUP299,Nigeria
+PROD0306,Fashion Item 306,Fashion,"Gonzalez, Cox and Kent",20358,35927.51,"Gonzalez, Cox and Kent Supplies",SUP300,China
+PROD0307,Fashion Item 307,Fashion,Andersen Inc,9119,13870.15,Andersen Inc Supplies,SUP301,China
+PROD0308,Electronics Item 308,Electronics,Prince Ltd,26281,37812.15,Prince Ltd Supplies,SUP302,Usa
+PROD0309,Fashion Item 309,Fashion,Edwards Group,28152,41975.71,Edwards Group Supplies,SUP303,Nigeria
+PROD0310,Home Item 310,Home,Robinson-Vazquez,25025,30414.99,Robinson-Vazquez Supplies,SUP304,China
+PROD0311,Electronics Item 311,Electronics,Ryan and Sons,25261,30293.86,Ryan and Sons Supplies,SUP305,Usa
+PROD0312,Groceries Item 312,Groceries,Brown LLC,8156,10819.14,Brown LLC Supplies,SUP306,China
+PROD0313,Fashion Item 313,Fashion,"Sawyer, Garcia and Franklin",40560,61576.15,"Sawyer, Garcia and Franklin Supplies",SUP307,China
+PROD0314,Home Item 314,Home,"Knight, Griffin and Perkins",9473,12511.92,"Knight, Griffin and Perkins Supplies",SUP308,China
+PROD0315,Home Item 315,Home,Smith-Robinson,12182,14971.26,Smith-Robinson Supplies,SUP309,China
+PROD0316,Groceries Item 316,Groceries,Sloan LLC,8684,13254.32,Sloan LLC Supplies,SUP310,China
+PROD0317,Fashion Item 317,Fashion,Lawson-Reid,15960,19963.06,Lawson-Reid Supplies,SUP311,Usa
+PROD0318,Fashion Item 318,Fashion,Ramos Ltd,29308,48510.3,Ramos Ltd Supplies,SUP312,Usa
+PROD0319,Fashion Item 319,Fashion,"Gonzalez, Murphy and Cabrera",33196,43656.47,"Gonzalez, Murphy and Cabrera Supplies",SUP313,Germany
+PROD0320,Home Item 320,Home,Mcdaniel-Torres,20395,30160.71,Mcdaniel-Torres Supplies,SUP314,Nigeria
+PROD0321,Fashion Item 321,Fashion,"Marsh, Martin and Warren",24903,37805.28,"Marsh, Martin and Warren Supplies",SUP315,Germany
+PROD0322,Beauty Item 322,Beauty,Matthews and Sons,29144,38714.32,Matthews and Sons Supplies,SUP206,China
+PROD0323,Electronics Item 323,Electronics,Phillips-Anderson,15688,23125.12,Phillips-Anderson Supplies,SUP316,Usa
+PROD0324,Fashion Item 324,Fashion,"Moore, Parks and Gallagher",900,1298.13,"Moore, Parks and Gallagher Supplies",SUP317,Usa
+PROD0325,Electronics Item 325,Electronics,"Smith, Thompson and Clayton",9490,12348.66,"Smith, Thompson and Clayton Supplies",SUP318,Usa
+PROD0326,Fashion Item 326,Fashion,"Walters, Parker and Ochoa",14797,17329.35,"Walters, Parker and Ochoa Supplies",SUP319,Germany
+PROD0327,Beauty Item 327,Beauty,"Wilkins, Swanson and Henry",4193,4622.06,"Wilkins, Swanson and Henry Supplies",SUP320,Nigeria
+PROD0328,Groceries Item 328,Groceries,"Freeman, Johnson and Obrien",26346,31336.14,"Freeman, Johnson and Obrien Supplies",SUP321,Usa
+PROD0329,Groceries Item 329,Groceries,Oneill-Jackson,6490,11366.34,Oneill-Jackson Supplies,SUP322,Nigeria
+PROD0330,Electronics Item 330,Electronics,Phillips PLC,47497,78151.23,Phillips PLC Supplies,SUP323,Usa
+PROD0331,Groceries Item 331,Groceries,Ward Inc,42449,50948.58,Ward Inc Supplies,SUP324,China
+PROD0332,Home Item 332,Home,"Stewart, Poole and Chambers",32917,39827.5,"Stewart, Poole and Chambers Supplies",SUP325,China
+PROD0333,Fashion Item 333,Fashion,Mcclain and Sons,35631,55220.09,Mcclain and Sons Supplies,SUP326,Germany
+PROD0334,Groceries Item 334,Groceries,Lester Ltd,40967,55000.39,Lester Ltd Supplies,SUP327,Germany
+PROD0335,Fashion Item 335,Fashion,Valdez Ltd,47185,74201.94,Valdez Ltd Supplies,SUP328,Germany
+PROD0336,Beauty Item 336,Beauty,"Miller, Kelly and Adams",21781,26565.82,"Miller, Kelly and Adams Supplies",SUP329,Usa
+PROD0337,Beauty Item 337,Beauty,"Olson, Smith and Young",44316,58217.56,"Olson, Smith and Young Supplies",SUP330,Usa
+PROD0338,Fashion Item 338,Fashion,Guzman-Casey,9671,15463.56,Guzman-Casey Supplies,SUP331,Germany
+PROD0339,Fashion Item 339,Fashion,Sanders Inc,7145,9890.51,Sanders Inc Supplies,SUP332,China
+PROD0340,Beauty Item 340,Beauty,Gibbs-Brewer,21975,31698.44,Gibbs-Brewer Supplies,SUP333,Usa
+PROD0341,Beauty Item 341,Beauty,"Robinson, Weber and Johnson",6007,8494.13,"Robinson, Weber and Johnson Supplies",SUP334,Usa
+PROD0342,Electronics Item 342,Electronics,"Craig, Cole and Ferguson",22519,39213.82,"Craig, Cole and Ferguson Supplies",SUP335,China
+PROD0343,Beauty Item 343,Beauty,Lopez and Sons,42228,47844.94,Lopez and Sons Supplies,SUP336,Nigeria
+PROD0344,Fashion Item 344,Fashion,"Wheeler, Whitaker and May",39774,46333.62,"Wheeler, Whitaker and May Supplies",SUP337,Usa
+PROD0345,Home Item 345,Home,Hodges-Tran,30260,39794.3,Hodges-Tran Supplies,SUP338,Nigeria
+PROD0346,Home Item 346,Home,"Hudson, Parks and Choi",15594,25500.56,"Hudson, Parks and Choi Supplies",SUP339,China
+PROD0347,Groceries Item 347,Groceries,"Robertson, Hartman and Petersen",23871,39164.29,"Robertson, Hartman and Petersen Supplies",SUP340,China
+PROD0348,Fashion Item 348,Fashion,Davis-Baker,29228,50029.32,Davis-Baker Supplies,SUP341,Nigeria
+PROD0349,Fashion Item 349,Fashion,Washington Inc,7848,13210.43,Washington Inc Supplies,SUP342,Usa
+PROD0350,Home Item 350,Home,Davis Inc,8304,11206.12,Davis Inc Supplies,SUP343,China
+PROD0351,Fashion Item 351,Fashion,"Mccullough, Mckinney and Ramos",46527,77422.99,"Mccullough, Mckinney and Ramos Supplies",SUP344,Germany
+PROD0352,Beauty Item 352,Beauty,Coleman-Moore,30611,37945.61,Coleman-Moore Supplies,SUP345,Usa
+PROD0353,Fashion Item 353,Fashion,"Jimenez, Chandler and Cain",40020,49713.73,"Jimenez, Chandler and Cain Supplies",SUP346,China
+PROD0354,Fashion Item 354,Fashion,Thomas and Sons,15662,22581.96,Thomas and Sons Supplies,SUP347,Nigeria
+PROD0355,Beauty Item 355,Beauty,Black-Riddle,2484,3118.84,Black-Riddle Supplies,SUP348,Nigeria
+PROD0356,Electronics Item 356,Electronics,"Sanders, Flores and Lopez",35224,44115.99,"Sanders, Flores and Lopez Supplies",SUP349,China
+PROD0357,Electronics Item 357,Electronics,Mcdaniel-Alvarez,4998,7906.17,Mcdaniel-Alvarez Supplies,SUP350,Nigeria
+PROD0358,Groceries Item 358,Groceries,Pierce-Cordova,42725,62584.26,Pierce-Cordova Supplies,SUP351,China
+PROD0359,Beauty Item 359,Beauty,Chandler and Sons,12441,17404.79,Chandler and Sons Supplies,SUP352,Germany
+PROD0360,Electronics Item 360,Electronics,"Mcintosh, Moore and Norris",34118,48860.52,"Mcintosh, Moore and Norris Supplies",SUP353,Usa
+PROD0361,Beauty Item 361,Beauty,"Marquez, Tran and Mcbride",11974,19978.13,"Marquez, Tran and Mcbride Supplies",SUP354,Nigeria
+PROD0362,Beauty Item 362,Beauty,"Edwards, Larson and Jackson",4977,6703.22,"Edwards, Larson and Jackson Supplies",SUP355,China
+PROD0363,Groceries Item 363,Groceries,Gilmore-Wright,31951,47297.5,Gilmore-Wright Supplies,SUP356,Nigeria
+PROD0364,Groceries Item 364,Groceries,Johnson Group,1131,1469.93,Johnson Group Supplies,SUP357,Germany
+PROD0365,Beauty Item 365,Beauty,Ramirez Inc,28994,35626.9,Ramirez Inc Supplies,SUP358,Nigeria
+PROD0366,Electronics Item 366,Electronics,"Smith, Gonzales and Townsend",21042,25820.16,"Smith, Gonzales and Townsend Supplies",SUP359,Nigeria
+PROD0367,Home Item 367,Home,Sparks-Stevenson,45818,60205.34,Sparks-Stevenson Supplies,SUP360,Germany
+PROD0368,Fashion Item 368,Fashion,Valdez-Cook,43812,54716.58,Valdez-Cook Supplies,SUP361,China
+PROD0369,Fashion Item 369,Fashion,"Davis, Summers and Smith",48271,60748.97,"Davis, Summers and Smith Supplies",SUP362,China
+PROD0370,Beauty Item 370,Beauty,Brown-Beck,3776,4421.96,Brown-Beck Supplies,SUP363,Germany
+PROD0371,Beauty Item 371,Beauty,"Edwards, Ball and Gross",7537,10170.19,"Edwards, Ball and Gross Supplies",SUP364,Nigeria
+PROD0372,Home Item 372,Home,Wilson-Tran,12820,16727.23,Wilson-Tran Supplies,SUP365,Nigeria
+PROD0373,Home Item 373,Home,Erickson-Ray,33042,38372.85,Erickson-Ray Supplies,SUP366,Nigeria
+PROD0374,Home Item 374,Home,"Brown, Chavez and Cameron",29512,47798.07,"Brown, Chavez and Cameron Supplies",SUP367,China
+PROD0375,Groceries Item 375,Groceries,"Wilson, Walker and Underwood",39329,65535.9,"Wilson, Walker and Underwood Supplies",SUP368,Usa
+PROD0376,Beauty Item 376,Beauty,"Jackson, Avery and Kelley",4779,8558.5,"Jackson, Avery and Kelley Supplies",SUP369,China
+PROD0377,Groceries Item 377,Groceries,Hernandez-Alvarez,14256,23801.0,Hernandez-Alvarez Supplies,SUP370,Usa
+PROD0378,Groceries Item 378,Groceries,Williams-Baxter,39012,59423.89,Williams-Baxter Supplies,SUP371,Germany
+PROD0379,Fashion Item 379,Fashion,Tran Group,25146,38734.23,Tran Group Supplies,SUP372,Nigeria
+PROD0380,Home Item 380,Home,Martin-Powell,17669,31453.79,Martin-Powell Supplies,SUP373,Nigeria
+PROD0381,Fashion Item 381,Fashion,"Martin, Haley and Parrish",3951,6032.05,"Martin, Haley and Parrish Supplies",SUP374,Nigeria
+PROD0382,Beauty Item 382,Beauty,Smith PLC,38893,64298.2,Smith PLC Supplies,SUP375,China
+PROD0383,Electronics Item 383,Electronics,"Reyes, Moore and Smith",7850,8899.99,"Reyes, Moore and Smith Supplies",SUP376,Usa
+PROD0384,Beauty Item 384,Beauty,"Webster, Sweeney and Simmons",36813,49263.12,"Webster, Sweeney and Simmons Supplies",SUP377,Usa
+PROD0385,Groceries Item 385,Groceries,"Johnson, Gutierrez and Ramirez",38343,42632.56,"Johnson, Gutierrez and Ramirez Supplies",SUP378,Usa
+PROD0386,Groceries Item 386,Groceries,Clark Group,45310,72324.24,Clark Group Supplies,SUP379,Usa
+PROD0387,Groceries Item 387,Groceries,"Christensen, Velez and Sandoval",6739,10735.16,"Christensen, Velez and Sandoval Supplies",SUP380,Usa
+PROD0388,Beauty Item 388,Beauty,Ross-Conner,39457,54715.78,Ross-Conner Supplies,SUP381,Germany
+PROD0389,Beauty Item 389,Beauty,"Greene, Miles and Bass",19538,33863.68,"Greene, Miles and Bass Supplies",SUP382,China
+PROD0390,Groceries Item 390,Groceries,"Hall, Patterson and Flores",43134,56348.81,"Hall, Patterson and Flores Supplies",SUP383,Nigeria
+PROD0391,Fashion Item 391,Fashion,Richardson LLC,48742,85616.21,Richardson LLC Supplies,SUP384,China
+PROD0392,Beauty Item 392,Beauty,Foley PLC,19999,30668.01,Foley PLC Supplies,SUP385,Germany
+PROD0393,Beauty Item 393,Beauty,Rosales PLC,47960,68125.97,Rosales PLC Supplies,SUP194,Nigeria
+PROD0394,Fashion Item 394,Fashion,Williams-Nelson,29207,35617.57,Williams-Nelson Supplies,SUP386,Usa
+PROD0395,Fashion Item 395,Fashion,Mclean-Adams,32630,43398.4,Mclean-Adams Supplies,SUP387,Usa
+PROD0396,Beauty Item 396,Beauty,Thompson-Glass,23341,37998.3,Thompson-Glass Supplies,SUP388,Usa
+PROD0397,Groceries Item 397,Groceries,Young-Banks,34468,55815.0,Young-Banks Supplies,SUP389,Usa
+PROD0398,Beauty Item 398,Beauty,Lowe Inc,3864,4734.97,Lowe Inc Supplies,SUP390,China
+PROD0399,Electronics Item 399,Electronics,"Garcia, Adams and Oconnor",29408,47689.03,"Garcia, Adams and Oconnor Supplies",SUP391,Nigeria
+PROD0400,Home Item 400,Home,Fischer-Dixon,48415,71517.15,Fischer-Dixon Supplies,SUP392,Usa
+PROD0401,Electronics Item 401,Electronics,Diaz-Dougherty,9521,12467.44,Diaz-Dougherty Supplies,SUP393,China
+PROD0402,Beauty Item 402,Beauty,Mcpherson-Fernandez,12790,19792.63,Mcpherson-Fernandez Supplies,SUP394,China
+PROD0403,Home Item 403,Home,Brown-Williams,5870,8355.86,Brown-Williams Supplies,SUP395,Nigeria
+PROD0404,Fashion Item 404,Fashion,Ball-Park,49692,74857.01,Ball-Park Supplies,SUP396,Usa
+PROD0405,Fashion Item 405,Fashion,Mathews-Mercer,17715,30962.43,Mathews-Mercer Supplies,SUP397,Usa
+PROD0406,Electronics Item 406,Electronics,Kirk-Ashley,17924,29688.66,Kirk-Ashley Supplies,SUP398,China
+PROD0407,Groceries Item 407,Groceries,Evans-Martinez,28382,41081.18,Evans-Martinez Supplies,SUP399,Usa
+PROD0408,Groceries Item 408,Groceries,Jordan LLC,34780,62480.17,Jordan LLC Supplies,SUP400,Usa
+PROD0409,Beauty Item 409,Beauty,"Lewis, George and Martin",7368,8532.88,"Lewis, George and Martin Supplies",SUP401,Usa
+PROD0410,Groceries Item 410,Groceries,Martinez-Oconnor,42324,47435.87,Martinez-Oconnor Supplies,SUP402,Germany
+PROD0411,Beauty Item 411,Beauty,Hoffman and Sons,33450,44796.35,Hoffman and Sons Supplies,SUP403,China
+PROD0412,Home Item 412,Home,Suarez and Sons,35651,42062.97,Suarez and Sons Supplies,SUP404,Usa
+PROD0413,Electronics Item 413,Electronics,Conrad Inc,38387,48829.54,Conrad Inc Supplies,SUP405,Nigeria
+PROD0414,Home Item 414,Home,"George, Padilla and Bray",35808,41388.69,"George, Padilla and Bray Supplies",SUP406,Usa
+PROD0415,Fashion Item 415,Fashion,Erickson PLC,38277,42408.99,Erickson PLC Supplies,SUP407,Nigeria
+PROD0416,Electronics Item 416,Electronics,"Cummings, White and Gutierrez",48858,80930.77,"Cummings, White and Gutierrez Supplies",SUP408,China
+PROD0417,Beauty Item 417,Beauty,"Wilson, Young and Ramos",41805,70740.17,"Wilson, Young and Ramos Supplies",SUP409,Germany
+PROD0418,Electronics Item 418,Electronics,Perez-Small,29682,42374.24,Perez-Small Supplies,SUP410,Germany
+PROD0419,Electronics Item 419,Electronics,Huff LLC,24774,32724.87,Huff LLC Supplies,SUP411,China
+PROD0420,Beauty Item 420,Beauty,Riley-Bates,28367,49563.62,Riley-Bates Supplies,SUP412,Nigeria
+PROD0421,Beauty Item 421,Beauty,Greene-Gutierrez,14113,17707.69,Greene-Gutierrez Supplies,SUP413,China
+PROD0422,Fashion Item 422,Fashion,Dalton-Martinez,6360,9791.87,Dalton-Martinez Supplies,SUP414,Germany
+PROD0423,Fashion Item 423,Fashion,Mccall PLC,49292,71631.86,Mccall PLC Supplies,SUP415,China
+PROD0424,Electronics Item 424,Electronics,Beck-Kelley,49949,80185.06,Beck-Kelley Supplies,SUP416,Nigeria
+PROD0425,Electronics Item 425,Electronics,Mills Inc,44339,58655.7,Mills Inc Supplies,SUP417,Usa
+PROD0426,Groceries Item 426,Groceries,"Martinez, Schwartz and Taylor",44627,61415.44,"Martinez, Schwartz and Taylor Supplies",SUP418,China
+PROD0427,Electronics Item 427,Electronics,Hansen-White,8486,12754.21,Hansen-White Supplies,SUP419,Nigeria
+PROD0428,Beauty Item 428,Beauty,"Cunningham, Newton and Allen",5731,6345.96,"Cunningham, Newton and Allen Supplies",SUP420,Germany
+PROD0429,Beauty Item 429,Beauty,Rowe Inc,8734,14821.44,Rowe Inc Supplies,SUP421,Usa
+PROD0430,Home Item 430,Home,"Hodge, Keller and Newton",20644,24650.6,"Hodge, Keller and Newton Supplies",SUP422,Usa
+PROD0431,Fashion Item 431,Fashion,"Reid, Hawkins and Ramos",23408,27735.76,"Reid, Hawkins and Ramos Supplies",SUP423,China
+PROD0432,Home Item 432,Home,Jones-Vaughn,3269,4909.31,Jones-Vaughn Supplies,SUP424,China
+PROD0433,Beauty Item 433,Beauty,"Wilson, Hansen and Castaneda",22001,36927.5,"Wilson, Hansen and Castaneda Supplies",SUP425,Nigeria
+PROD0434,Electronics Item 434,Electronics,Joyce Ltd,33417,53534.88,Joyce Ltd Supplies,SUP426,Germany
+PROD0435,Electronics Item 435,Electronics,Dominguez-Ruiz,19073,25355.99,Dominguez-Ruiz Supplies,SUP427,China
+PROD0436,Groceries Item 436,Groceries,Thompson Inc,20117,25116.56,Thompson Inc Supplies,SUP428,Nigeria
+PROD0437,Home Item 437,Home,"Chandler, Weiss and Johns",14038,19376.97,"Chandler, Weiss and Johns Supplies",SUP429,China
+PROD0438,Fashion Item 438,Fashion,"Jones, Boyd and Baker",46189,76514.5,"Jones, Boyd and Baker Supplies",SUP430,Germany
+PROD0439,Beauty Item 439,Beauty,"Mckenzie, Blackwell and Smith",33018,41072.71,"Mckenzie, Blackwell and Smith Supplies",SUP431,Usa
+PROD0440,Home Item 440,Home,Jones-Edwards,9665,16822.02,Jones-Edwards Supplies,SUP432,China
+PROD0441,Electronics Item 441,Electronics,"Arnold, Roberts and Webb",14723,23308.64,"Arnold, Roberts and Webb Supplies",SUP433,China
+PROD0442,Beauty Item 442,Beauty,Williams PLC,47726,72529.62,Williams PLC Supplies,SUP434,Germany
+PROD0443,Beauty Item 443,Beauty,Harris and Sons,16578,20661.0,Harris and Sons Supplies,SUP435,China
+PROD0444,Groceries Item 444,Groceries,Gallegos-Martin,41045,46883.55,Gallegos-Martin Supplies,SUP436,China
+PROD0445,Electronics Item 445,Electronics,"Turner, Allen and Foster",41566,55436.76,"Turner, Allen and Foster Supplies",SUP437,Nigeria
+PROD0446,Fashion Item 446,Fashion,Reese Group,49735,84006.79,Reese Group Supplies,SUP438,China
+PROD0447,Home Item 447,Home,"Manning, Hanson and Scott",6421,8711.39,"Manning, Hanson and Scott Supplies",SUP439,Nigeria
+PROD0448,Fashion Item 448,Fashion,Peters Group,30014,47000.77,Peters Group Supplies,SUP440,Nigeria
+PROD0449,Electronics Item 449,Electronics,Berger Group,43141,57550.9,Berger Group Supplies,SUP441,China
+PROD0450,Home Item 450,Home,"Jones, Henry and Gill",25113,31832.89,"Jones, Henry and Gill Supplies",SUP442,China
+PROD0451,Home Item 451,Home,"Morrison, Hess and Reyes",37730,46413.79,"Morrison, Hess and Reyes Supplies",SUP443,Usa
+PROD0452,Fashion Item 452,Fashion,Goodwin Group,8081,9461.91,Goodwin Group Supplies,SUP444,Usa
+PROD0453,Fashion Item 453,Fashion,"Flores, Alvarado and Boyle",16628,22863.85,"Flores, Alvarado and Boyle Supplies",SUP445,Usa
+PROD0454,Beauty Item 454,Beauty,Johnson Inc,3291,5140.6,Johnson Inc Supplies,SUP446,Germany
+PROD0455,Beauty Item 455,Beauty,Jensen Ltd,16227,23205.84,Jensen Ltd Supplies,SUP447,Nigeria
+PROD0456,Groceries Item 456,Groceries,"Allen, Lewis and Hoover",30445,34089.91,"Allen, Lewis and Hoover Supplies",SUP448,Germany
+PROD0457,Groceries Item 457,Groceries,Watson-Ward,36197,54880.12,Watson-Ward Supplies,SUP449,Nigeria
+PROD0458,Home Item 458,Home,Patel-Villanueva,27360,30185.75,Patel-Villanueva Supplies,SUP450,Nigeria
+PROD0459,Groceries Item 459,Groceries,Harper-Cox,19832,24273.62,Harper-Cox Supplies,SUP451,Nigeria
+PROD0460,Electronics Item 460,Electronics,"Douglas, Green and Cisneros",25253,42047.93,"Douglas, Green and Cisneros Supplies",SUP452,China
+PROD0461,Fashion Item 461,Fashion,Rivas-Jacobs,5001,8361.17,Rivas-Jacobs Supplies,SUP453,China
+PROD0462,Home Item 462,Home,"Mccarthy, Tucker and Hall",5516,6202.59,"Mccarthy, Tucker and Hall Supplies",SUP454,Germany
+PROD0463,Electronics Item 463,Electronics,Mccullough-Gonzalez,41358,74420.54,Mccullough-Gonzalez Supplies,SUP455,Nigeria
+PROD0464,Home Item 464,Home,"Ochoa, Wilkinson and Rasmussen",21689,33492.68,"Ochoa, Wilkinson and Rasmussen Supplies",SUP456,Usa
+PROD0465,Groceries Item 465,Groceries,"Nelson, Henry and Hernandez",22438,33091.32,"Nelson, Henry and Hernandez Supplies",SUP457,Nigeria
+PROD0466,Fashion Item 466,Fashion,Gordon-Murray,27343,45929.81,Gordon-Murray Supplies,SUP458,Nigeria
+PROD0467,Electronics Item 467,Electronics,Gonzalez LLC,24964,44294.48,Gonzalez LLC Supplies,SUP459,Germany
+PROD0468,Electronics Item 468,Electronics,Silva Ltd,12880,20202.22,Silva Ltd Supplies,SUP460,Germany
+PROD0469,Beauty Item 469,Beauty,Ibarra Inc,580,692.96,Ibarra Inc Supplies,SUP461,Germany
+PROD0470,Groceries Item 470,Groceries,Collins Inc,1042,1338.8,Collins Inc Supplies,SUP462,China
+PROD0471,Home Item 471,Home,Richmond-Hull,28005,34893.43,Richmond-Hull Supplies,SUP463,Usa
+PROD0472,Groceries Item 472,Groceries,Mitchell-Bennett,33865,57931.29,Mitchell-Bennett Supplies,SUP464,Nigeria
+PROD0473,Fashion Item 473,Fashion,Mack-Simpson,42034,53862.96,Mack-Simpson Supplies,SUP465,China
+PROD0474,Fashion Item 474,Fashion,Macdonald-Sanders,30206,35680.58,Macdonald-Sanders Supplies,SUP466,Usa
+PROD0475,Beauty Item 475,Beauty,Smith PLC,15567,23574.42,Smith PLC Supplies,SUP375,China
+PROD0476,Groceries Item 476,Groceries,Douglas-Parker,1916,2879.25,Douglas-Parker Supplies,SUP467,Nigeria
+PROD0477,Beauty Item 477,Beauty,"Lara, Andrews and Lambert",3442,4794.27,"Lara, Andrews and Lambert Supplies",SUP468,Nigeria
+PROD0478,Home Item 478,Home,Dean Ltd,17547,27840.43,Dean Ltd Supplies,SUP469,Germany
+PROD0479,Beauty Item 479,Beauty,Williams Group,41571,73814.84,Williams Group Supplies,SUP222,Germany
+PROD0480,Electronics Item 480,Electronics,Perez LLC,37833,46216.43,Perez LLC Supplies,SUP470,Nigeria
+PROD0481,Beauty Item 481,Beauty,Garcia PLC,35665,58293.44,Garcia PLC Supplies,SUP100,Nigeria
+PROD0482,Fashion Item 482,Fashion,Kane Inc,40717,59300.37,Kane Inc Supplies,SUP471,China
+PROD0483,Fashion Item 483,Fashion,"Robinson, Clark and Perez",21465,34946.72,"Robinson, Clark and Perez Supplies",SUP472,Nigeria
+PROD0484,Fashion Item 484,Fashion,Hansen-Strickland,7832,13306.37,Hansen-Strickland Supplies,SUP473,Germany
+PROD0485,Groceries Item 485,Groceries,"Mason, Alexander and Clarke",22038,32535.72,"Mason, Alexander and Clarke Supplies",SUP474,Nigeria
+PROD0486,Home Item 486,Home,Miller Inc,9398,15902.36,Miller Inc Supplies,SUP475,Usa
+PROD0487,Electronics Item 487,Electronics,Vaughn LLC,30221,38867.76,Vaughn LLC Supplies,SUP476,Nigeria
+PROD0488,Groceries Item 488,Groceries,Lopez-Lowe,1894,2934.3,Lopez-Lowe Supplies,SUP477,Nigeria
+PROD0489,Home Item 489,Home,"Bryant, Cooper and Spencer",36728,65078.3,"Bryant, Cooper and Spencer Supplies",SUP478,Usa
+PROD0490,Electronics Item 490,Electronics,Avila Ltd,7424,12103.28,Avila Ltd Supplies,SUP479,Usa
+PROD0491,Fashion Item 491,Fashion,Brown-Robinson,47741,78102.68,Brown-Robinson Supplies,SUP480,China
+PROD0492,Electronics Item 492,Electronics,"Adams, Smith and Clayton",13810,18140.08,"Adams, Smith and Clayton Supplies",SUP481,Usa
+PROD0493,Groceries Item 493,Groceries,Allen-Velasquez,39208,56958.0,Allen-Velasquez Supplies,SUP482,Nigeria
+PROD0494,Beauty Item 494,Beauty,"Stone, King and Walker",4760,6926.18,"Stone, King and Walker Supplies",SUP483,Nigeria
+PROD0495,Groceries Item 495,Groceries,Simpson Inc,36438,52067.18,Simpson Inc Supplies,SUP484,Germany
+PROD0496,Fashion Item 496,Fashion,Mullen-Ward,34052,42759.48,Mullen-Ward Supplies,SUP485,China
+PROD0497,Groceries Item 497,Groceries,"Brady, Rodriguez and Greer",14554,20132.43,"Brady, Rodriguez and Greer Supplies",SUP486,Usa
+PROD0498,Home Item 498,Home,Collins-Stewart,29958,33245.81,Collins-Stewart Supplies,SUP487,Usa
+PROD0499,Fashion Item 499,Fashion,"Johnson, Brown and Strickland",6679,8434.13,"Johnson, Brown and Strickland Supplies",SUP488,China
+PROD0500,Electronics Item 500,Electronics,Lucas and Sons,40152,44517.3,Lucas and Sons Supplies,SUP489,China

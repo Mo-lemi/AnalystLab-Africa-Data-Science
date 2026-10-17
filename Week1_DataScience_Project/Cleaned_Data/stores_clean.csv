@@ -1,0 +1,26 @@
+store_id,store_name,region_original,state,city,opening_date,store_label,geo_zone
+STR001,ShopSmart Abuja,East,Abuja,Abuja,2020-01-31,Abuja (STR001),North Central
+STR002,ShopSmart Kano,West,Kano,Kano,2020-03-01,Kano (STR002),North West
+STR003,ShopSmart Lagos,South,Lagos,Lagos,2020-03-31,Lagos (STR003),South West
+STR004,ShopSmart Asaba,South,Delta,Asaba,2020-04-30,Asaba (STR004),South South
+STR005,ShopSmart Enugu,South,Enugu,Enugu,2020-05-30,Enugu (STR005),South East
+STR006,ShopSmart Kaduna,East,Kaduna,Kaduna,2020-06-29,Kaduna (STR006),North West
+STR007,ShopSmart Ibadan,North,Oyo,Ibadan,2020-07-29,Ibadan (STR007),South West
+STR008,ShopSmart Port Harcourt,North,Rivers,Port Harcourt,2020-08-28,Port Harcourt (STR008),South South
+STR009,ShopSmart Ibadan,South,Oyo,Ibadan,2020-09-27,Ibadan (STR009),South West
+STR010,ShopSmart Abuja,North,Abuja,Abuja,2020-10-27,Abuja (STR010),North Central
+STR011,ShopSmart Kaduna,West,Kaduna,Kaduna,2020-11-26,Kaduna (STR011),North West
+STR012,ShopSmart Abeokuta,South,Ogun,Abeokuta,2020-12-26,Abeokuta (STR012),South West
+STR013,ShopSmart Lagos,East,Lagos,Lagos,2021-01-25,Lagos (STR013),South West
+STR014,ShopSmart Port Harcourt,North,Rivers,Port Harcourt,2021-02-24,Port Harcourt (STR014),South South
+STR015,ShopSmart Lagos,North,Lagos,Lagos,2021-03-26,Lagos (STR015),South West
+STR016,ShopSmart Abeokuta,East,Ogun,Abeokuta,2021-04-25,Abeokuta (STR016),South West
+STR017,ShopSmart Abuja,South,Abuja,Abuja,2021-05-25,Abuja (STR017),North Central
+STR018,ShopSmart Ibadan,East,Oyo,Ibadan,2021-06-24,Ibadan (STR018),South West
+STR019,ShopSmart Kaduna,South,Kaduna,Kaduna,2021-07-24,Kaduna (STR019),North West
+STR020,ShopSmart Asaba,North,Delta,Asaba,2021-08-23,Asaba (STR020),South South
+STR021,ShopSmart Lagos,West,Lagos,Lagos,2021-09-22,Lagos (STR021),South West
+STR022,ShopSmart Awka,East,Anambra,Awka,2021-10-22,Awka (STR022),South East
+STR023,ShopSmart Abuja,South,Abuja,Abuja,2021-11-21,Abuja (STR023),North Central
+STR024,ShopSmart Ibadan,East,Oyo,Ibadan,2021-12-21,Ibadan (STR024),South West
+STR025,ShopSmart Asaba,West,Delta,Asaba,2022-01-20,Asaba (STR025),South South

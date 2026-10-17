@@ -1,0 +1,35 @@
+table,step,detail,rows_affected
+customers,rename columns,converted column names to snake_case,0
+products,rename columns,converted column names to snake_case,0
+orders,rename columns,converted column names to snake_case,0
+order_items,rename columns,converted column names to snake_case,0
+stores,rename columns,converted column names to snake_case,0
+returns,rename columns,converted column names to snake_case,0
+employees,rename columns,converted column names to snake_case,0
+suppliers,rename columns,converted column names to snake_case,0
+inventory,rename columns,converted column names to snake_case,0
+returns,remove duplicates,kept first return record per order_id,58
+customers,convert dates,registration_date -> datetime64 (unparseable: 0),0
+orders,convert dates,order_date -> datetime64 (unparseable: 0),0
+stores,convert dates,opening_date -> datetime64 (unparseable: 0),0
+returns,convert dates,return_date -> datetime64 (unparseable: 0),0
+employees,convert dates,hire_date -> datetime64 (unparseable: 0),0
+inventory,convert dates,last_restock_date -> datetime64 (unparseable: 0),0
+customers,fix data types,"trimmed, title-cased and categorised ['gender', 'city', 'state', 'customer_segment']",0
+orders,fix data types,"trimmed, title-cased and categorised ['payment_method', 'sales_channel', 'order_status']",0
+products,fix data types,"trimmed, title-cased and categorised ['category', 'sub_category']",0
+stores,fix data types,"trimmed, title-cased and categorised ['region', 'state', 'city']",0
+returns,fix data types,"trimmed, title-cased and categorised ['return_reason']",0
+employees,fix data types,"trimmed, title-cased and categorised ['role']",0
+suppliers,fix data types,"trimmed, title-cased and categorised ['country']",0
+products,fix data types,"ensured ['cost_price', 'selling_price'] are numeric",0
+orders,fix data types,"ensured ['unit_price', 'shipping_cost'] are numeric",0
+order_items,fix data types,"ensured ['unit_price', 'line_total'] are numeric",0
+returns,fix data types,ensured ['refund_amount'] are numeric,0
+employees,fix data types,ensured ['monthly_salary'] are numeric,0
+orders,inconsistent values,"discount treated as % (values 0-20); recomputed gross_sales, discount_amount, net_sales",50000
+stores,inconsistent values,added unique store_label (names repeat across stores),25
+stores,inconsistent values,region inconsistent with state; added geo_zone from state,25
+returns,inconsistent values,flagged return_before_order / refund_exceeds_sale / order_not_completed (kept rows),2095
+products,inconsistent values,no supplier_id in products; linked via brand -> '<brand> Supplies',500
+products,inconsistent values,dropped sub_category (single constant value 'General'),0

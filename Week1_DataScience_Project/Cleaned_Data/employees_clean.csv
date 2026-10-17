@@ -1,0 +1,126 @@
+employee_id,employee_name,role,store_id,hire_date,monthly_salary
+EMP0001,Keith Bennett,Inventory Officer,STR001,2019-01-07,4027
+EMP0002,Aaron Chavez,Store Manager,STR001,2024-05-30,3355
+EMP0003,Steven Wallace,Inventory Officer,STR001,2022-05-19,3160
+EMP0004,Mia Jones,Customer Service,STR001,2023-12-05,4807
+EMP0005,Ryan Miller,Inventory Officer,STR001,2022-01-12,3238
+EMP0006,Laura Frazier,Customer Service,STR002,2020-10-25,4090
+EMP0007,Rachael Davis,Customer Service,STR002,2025-10-11,3951
+EMP0008,Andrea White,Cashier,STR002,2026-08-10,4969
+EMP0009,Andrew Newman,Store Manager,STR002,2025-01-16,3682
+EMP0010,Michael Mills,Inventory Officer,STR002,2024-02-28,4710
+EMP0011,Ashley David,Sales Associate,STR003,2021-01-01,2584
+EMP0012,Brenda Huffman,Cashier,STR003,2026-03-08,3145
+EMP0013,Terry Conner,Customer Service,STR003,2026-07-13,4586
+EMP0014,Timothy Navarro,Cashier,STR003,2020-07-27,2295
+EMP0015,Kara Scott,Cashier,STR003,2026-07-06,2776
+EMP0016,Adam Holden,Inventory Officer,STR004,2021-10-18,3698
+EMP0017,Mrs. Michele Davis,Cashier,STR004,2021-11-28,2430
+EMP0018,Kristin Ross,Store Manager,STR004,2023-02-01,4477
+EMP0019,Mrs. Melinda Ewing,Sales Associate,STR004,2020-12-15,4168
+EMP0020,Kevin Mooney,Cashier,STR004,2023-07-06,3989
+EMP0021,Gina Davis,Cashier,STR005,2019-02-10,1988
+EMP0022,Christine Christian,Sales Associate,STR005,2019-02-09,2342
+EMP0023,James Hall,Sales Associate,STR005,2025-10-11,3394
+EMP0024,Gregory Stokes,Store Manager,STR005,2021-01-30,1450
+EMP0025,Michael Horton,Sales Associate,STR005,2023-08-10,2325
+EMP0026,Mitchell Lloyd,Inventory Officer,STR006,2023-04-21,4418
+EMP0027,Darrell Ford,Store Manager,STR006,2022-02-21,4038
+EMP0028,Brian Owen,Customer Service,STR006,2026-02-09,2291
+EMP0029,Natalie Murphy,Sales Associate,STR006,2024-02-16,1890
+EMP0030,Susan Fry,Inventory Officer,STR006,2026-02-28,1575
+EMP0031,Connor Phillips,Cashier,STR007,2023-05-16,3909
+EMP0032,Frederick Benjamin,Customer Service,STR007,2021-10-31,2182
+EMP0033,Sharon Duran,Store Manager,STR007,2020-06-10,4537
+EMP0034,Miss Tracy Hinton DVM,Customer Service,STR007,2022-07-08,2876
+EMP0035,Dawn Hansen,Inventory Officer,STR007,2022-06-10,1857
+EMP0036,Heather Vazquez,Customer Service,STR008,2024-12-10,3809
+EMP0037,Joseph Morris,Inventory Officer,STR008,2021-10-28,2625
+EMP0038,Anthony Parks,Inventory Officer,STR008,2025-09-07,4954
+EMP0039,Melissa Chandler,Cashier,STR008,2025-02-15,2845
+EMP0040,Ms. Denise Wilson MD,Cashier,STR008,2019-12-07,3415
+EMP0041,Mary Brown,Sales Associate,STR009,2022-06-25,1328
+EMP0042,Valerie Miller,Store Manager,STR009,2026-05-07,3571
+EMP0043,Matthew Castro,Cashier,STR009,2025-04-19,1942
+EMP0044,Xavier Lane III,Sales Associate,STR009,2021-08-17,3671
+EMP0045,Gabrielle Bates,Sales Associate,STR009,2019-09-07,4553
+EMP0046,Kim Rodriguez,Inventory Officer,STR010,2019-07-14,4295
+EMP0047,Gina Sanders,Inventory Officer,STR010,2022-05-07,3121
+EMP0048,Holly Gibbs,Store Manager,STR010,2022-09-27,2326
+EMP0049,Benjamin Oliver,Store Manager,STR010,2020-05-08,4471
+EMP0050,Susan Love,Cashier,STR010,2019-12-08,4520
+EMP0051,Maria Hamilton,Inventory Officer,STR011,2023-02-16,2655
+EMP0052,Amy Kelly,Sales Associate,STR011,2025-05-02,3506
+EMP0053,Gary Herman,Customer Service,STR011,2022-11-20,2994
+EMP0054,Stephen Black,Cashier,STR011,2025-04-22,2671
+EMP0055,Tracy Allen,Store Manager,STR011,2019-03-04,2145
+EMP0056,Matthew Bowman,Sales Associate,STR012,2019-08-11,1271
+EMP0057,Nicole Brady,Cashier,STR012,2026-02-11,1644
+EMP0058,Valerie Jensen,Inventory Officer,STR012,2023-07-16,2676
+EMP0059,Bobby Brown,Cashier,STR012,2023-07-24,3353
+EMP0060,Juan Preston,Cashier,STR012,2023-01-22,3359
+EMP0061,Albert Jackson,Sales Associate,STR013,2022-10-29,2730
+EMP0062,Hannah Miller,Cashier,STR013,2022-04-21,3074
+EMP0063,Samantha Houston,Inventory Officer,STR013,2019-06-08,1310
+EMP0064,Jermaine Hall PhD,Inventory Officer,STR013,2019-05-06,3697
+EMP0065,Timothy Simmons,Customer Service,STR013,2020-07-13,3470
+EMP0066,Anne Scott,Customer Service,STR014,2019-01-26,2981
+EMP0067,Sarah Thomas,Store Manager,STR014,2019-12-16,3088
+EMP0068,Robert Mitchell,Customer Service,STR014,2026-06-02,1856
+EMP0069,Derrick Berry,Cashier,STR014,2022-03-17,4662
+EMP0070,Paige Roberts,Sales Associate,STR014,2022-10-19,1899
+EMP0071,Richard Estrada,Inventory Officer,STR015,2020-04-13,4594
+EMP0072,Jared Stevens,Store Manager,STR015,2025-01-16,2908
+EMP0073,Heather Barr,Sales Associate,STR015,2019-06-09,4960
+EMP0074,Chelsey Mcmahon,Store Manager,STR015,2019-11-01,1264
+EMP0075,Cassie Edwards,Sales Associate,STR015,2019-01-29,3832
+EMP0076,Todd Crawford,Customer Service,STR016,2020-12-24,4800
+EMP0077,Regina Foster,Inventory Officer,STR016,2021-03-04,2313
+EMP0078,Jeffrey Riley,Inventory Officer,STR016,2019-12-04,1313
+EMP0079,Renee Wright,Customer Service,STR016,2022-05-09,3245
+EMP0080,Mr. Carl Miles,Cashier,STR016,2020-08-10,3739
+EMP0081,Michael Edwards,Cashier,STR017,2025-09-16,4378
+EMP0082,Patricia Burton,Sales Associate,STR017,2021-12-08,3268
+EMP0083,Susan Jackson,Customer Service,STR017,2021-11-04,3111
+EMP0084,Joshua Cook,Customer Service,STR017,2023-03-24,3573
+EMP0085,Tara Johnson,Cashier,STR017,2025-10-14,4788
+EMP0086,Paul Porter,Inventory Officer,STR018,2026-03-31,4293
+EMP0087,Christian Thomas,Customer Service,STR018,2022-02-01,2779
+EMP0088,Andres Harris,Cashier,STR018,2025-01-26,4981
+EMP0089,Brian Flynn,Customer Service,STR018,2021-03-21,4666
+EMP0090,Robin Mclaughlin,Inventory Officer,STR018,2020-04-27,4977
+EMP0091,Richard Thomas,Cashier,STR019,2022-06-06,2209
+EMP0092,William Rangel,Customer Service,STR019,2023-06-09,2106
+EMP0093,Emily Campbell,Cashier,STR019,2025-08-26,3580
+EMP0094,Robin Thomas,Cashier,STR019,2020-04-29,1220
+EMP0095,Lisa Morales,Inventory Officer,STR019,2024-02-18,1569
+EMP0096,John Guerra,Sales Associate,STR020,2025-04-17,2863
+EMP0097,Victoria White,Inventory Officer,STR020,2021-04-07,4024
+EMP0098,Tammy Chambers,Customer Service,STR020,2022-05-07,1350
+EMP0099,Chelsea Clark,Customer Service,STR020,2021-05-28,2699
+EMP0100,Jordan Morris,Sales Associate,STR020,2022-09-17,3365
+EMP0101,Chris Jordan,Customer Service,STR021,2020-03-15,2874
+EMP0102,Edward Morales,Sales Associate,STR021,2020-02-05,3529
+EMP0103,Matthew Lyons,Cashier,STR021,2025-05-30,3828
+EMP0104,Ian Davis,Customer Service,STR021,2020-06-11,1961
+EMP0105,Jennifer Johnson,Store Manager,STR021,2025-10-24,3830
+EMP0106,Victor Davis,Store Manager,STR022,2019-08-22,4542
+EMP0107,Stanley Edwards,Customer Service,STR022,2025-09-11,4758
+EMP0108,Daniel Bonilla,Sales Associate,STR022,2019-08-12,4668
+EMP0109,Laura Lloyd,Cashier,STR022,2025-03-31,3261
+EMP0110,Kimberly Myers,Customer Service,STR022,2020-07-29,1384
+EMP0111,Brandi Mejia,Inventory Officer,STR023,2020-03-16,2168
+EMP0112,Natalie Jenkins,Store Manager,STR023,2026-03-14,3544
+EMP0113,Thomas Mclaughlin,Store Manager,STR023,2023-10-01,1846
+EMP0114,Sherry Weaver,Inventory Officer,STR023,2021-07-20,1592
+EMP0115,Christy Roberson,Sales Associate,STR023,2021-10-21,3901
+EMP0116,Kayla Munoz,Store Manager,STR024,2025-05-01,3037
+EMP0117,Amber Lewis,Sales Associate,STR024,2023-08-23,4108
+EMP0118,Joyce Underwood,Sales Associate,STR024,2020-10-08,1219
+EMP0119,Whitney Davis,Cashier,STR024,2020-07-18,2824
+EMP0120,Cynthia Robinson,Store Manager,STR024,2022-02-27,2450
+EMP0121,Michelle Roberts,Customer Service,STR025,2025-07-08,3909
+EMP0122,Debra Mckay,Customer Service,STR025,2023-04-27,2261
+EMP0123,April West,Sales Associate,STR025,2020-07-29,4607
+EMP0124,Ryan Mcdonald,Store Manager,STR025,2019-06-07,1825
+EMP0125,Brian Smith,Customer Service,STR025,2026-05-28,4573

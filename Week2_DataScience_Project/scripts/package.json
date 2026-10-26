@@ -1,0 +1,11 @@
+{
+  "name": "week2-reports",
+  "private": true,
+  "description": "Builds the Week 2 Word reports",
+  "scripts": {
+    "build": "node business_report.js && node preprocessing_report.js"
+  },
+  "dependencies": {
+    "docx": "9.5.1"
+  }
+}

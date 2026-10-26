@@ -12,3 +12,6 @@ Thumbs.db
 
 # Programme brief (shared privately by AnalystLab Africa)
 AnalystLab_Africa_Week*_*.pdf
+
+# Node
+node_modules/

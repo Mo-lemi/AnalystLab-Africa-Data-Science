@@ -11,7 +11,7 @@ const children = [
   ...titleBlock("Data Preprocessing Report", "From raw patient records to a machine-learning-ready dataset"),
 
   h1("1. Summary"),
-  p("This report documents every step taken to prepare the Heart Failure Prediction dataset (918 patients, 11 clinical features) for a model that predicts heart disease. The full code and outputs are in Week2_Feature_Engineering.ipynb."),
+  p("This report documents every step taken to prepare the Heart Failure Prediction dataset (918 patients, 11 clinical features) for a model that predicts heart disease. The full code and outputs are in Week2_Feature_Engineering.ipynb; figure numbers in this report match the notebook."),
   table([
     ["Raw data", "Final ML-ready data"],
     ["918 rows, 12 columns, 5 text columns", "918 rows (734 train / 184 test), 14 numeric features + target"],
@@ -32,7 +32,7 @@ const children = [
   bullet("**Target balance:** 55.3% heart disease, 44.7% normal: mildly imbalanced, so stratified splitting is sufficient."),
   bullet("**Strongest raw signals:** a flat ST slope (83% disease vs 20% for an upward slope), asymptomatic chest pain (79%), exercise-induced angina (85% vs 35%) and male sex (63% vs 26%). Resting ECG separates the classes only weakly (52% to 66%)."),
   image(viz("02_numeric_histograms")),
-  caption("Figure 1. Continuous features by diagnosis. Note the spike of impossible zeros in Cholesterol."),
+  caption("Figure 2. Continuous features by diagnosis. Note the spike of impossible zeros in Cholesterol."),
 
   h1("4. Data cleaning"),
   table([
@@ -55,7 +55,7 @@ const children = [
   p(""),
   p("The dataset has no identifier, name or date columns, so no feature was removed purely as irrelevant; removals were decided with evidence during feature selection (section 10)."),
   image(viz("05_engineered_features")),
-  caption("Figure 2. Engineered features against the diagnosis."),
+  caption("Figure 5. Engineered features against the diagnosis."),
 
   h1("6. Train/test split"),
   p("A stratified 80/20 split (random_state = 42) gave 734 training and 184 test patients, both with 55.3%/55.4% heart disease. Splitting first prevents information about test patients from leaking into the preprocessing statistics."),
@@ -66,13 +66,13 @@ const children = [
   bullet("**The mean was rejected:** cholesterol is right-skewed, so the median is more representative."),
   bullet("**Per-sex medians** reflect that cholesterol levels differ between men and women."),
   image(viz("06_cholesterol_imputation"), 560),
-  caption("Figure 3. Cholesterol before and after imputation (training set)."),
+  caption("Figure 6. Cholesterol before and after imputation (training set)."),
 
   h1("8. Outlier detection and treatment"),
   p("Outliers were detected on the training set with boxplots, the IQR rule (outside Q1 − 1.5×IQR or Q3 + 1.5×IQR) and Z-scores (|z| > 3). The IQR rule flagged 20 resting_bp, 33 cholesterol, 13 st_depression, 2 max_heart_rate and 2 hr_pct_of_predicted values; the Z-score flagged fewer (6, 10, 6, 0 and 1), because it assumes a normal distribution and its own mean and standard deviation are inflated by the outliers."),
   p("**Treatment: capping (winsorising) at the training-set IQR fences.** The values are clinically plausible (a cholesterol of 500 mg/dl does occur), so deleting those patients would discard real, often high-risk, cases. Capping keeps every patient while stopping extreme values from dominating distance- and gradient-based models. The IQR rule was preferred to the Z-score because several features are skewed."),
   image(viz("07_outlier_boxplots")),
-  caption("Figure 4. Boxplots before (top) and after (bottom) capping."),
+  caption("Figure 7. Boxplots before (top) and after (bottom) capping."),
 
   h1("9. Encoding and scaling"),
   h2("9.1 Encoding"),
@@ -87,16 +87,12 @@ const children = [
   h2("9.2 Scaling"),
   p("StandardScaler, MinMaxScaler and RobustScaler were compared. **RobustScaler** was chosen for the six continuous features because it uses the median and IQR, which are not distorted by the remaining skew (st_depression) or by the cluster of imputed cholesterol values at the median. MinMaxScaler was rejected because it depends on the single most extreme values. The 0/1 columns were not scaled, to keep them interpretable. The scaler was fitted on the training set only."),
   image(viz("08_scaler_comparison")),
-  caption("Figure 5. The three scalers change the axis, not the shape of the distribution."),
+  caption("Figure 8. The three scalers change the axis, not the shape of the distribution."),
 
   h1("10. Feature selection"),
   p("Three methods were combined on the training set: a correlation heatmap, mutual information and random-forest importance. Two rules were fixed **before** looking at the results:"),
   numbered("**Redundancy:** for any pair of features correlated above |0.8|, remove the one with lower mutual information."),
   numbered("**Low relevance:** remove a feature only if both methods rate it as uninformative (mutual information < 0.01 and random-forest importance < 0.02)."),
-  image(viz("09_correlation_heatmap"), 560),
-  caption("Figure 6. Correlation heatmap of the encoded features and the target (training set)."),
-  image(viz("10_feature_importance")),
-  caption("Figure 7. Mutual information and random-forest importance."),
   table([
     ["Removed feature", "Reason"],
     ["hr_pct_of_predicted", "Redundant with max_heart_rate (r = 0.95), lower mutual information (0.059 vs 0.081)"],
@@ -107,6 +103,10 @@ const children = [
   p(""),
   p("**Most important features:** st_slope_Flat, chest_pain_type_ASY, exercise_angina, st_depression and max_heart_rate, which rank in the top six for both methods. Two engineered features did not beat the raw columns they were derived from, and the rule was applied as written rather than adjusted after seeing the result. Cholesterol was kept although its linear correlation is only 0.06, because its mutual information ranks 6th, which points to a non-linear relationship."),
   p("**Validation:** a 5-fold cross-validated logistic regression scored ROC AUC **0.930** with all 19 features and **0.930** with the 14 selected ones, so the selection removed 5 columns without any loss of predictive power."),
+  image(viz("09_correlation_heatmap"), 560),
+  caption("Figure 9. Correlation heatmap of the encoded features and the target (training set)."),
+  image(viz("10_feature_importance")),
+  caption("Figure 10. Mutual information and random-forest importance."),
 
   h1("11. Final dataset and readiness"),
   table([

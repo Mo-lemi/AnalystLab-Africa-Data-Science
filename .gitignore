@@ -8,10 +8,16 @@ __pycache__/
 # OS / editor
 .DS_Store
 Thumbs.db
-.vscode/
+.vscode/    
 
 # Programme brief (shared privately by AnalystLab Africa)
 AnalystLab_Africa_Week*_*.pdf
+AnalystLab_Africa_Week2_Data_Science_Assignment(1).pdf
+AnalystLab_Africa_Week3_Batch_F_Assignment.pdf
 
 # Node
 node_modules/
+
+# Week 3 raw healthcare data pack (contains patient names/addresses)
+Week3_DataScience_Project/Data/*.csv
+Week3_DataScience_Project/Data/*.sql

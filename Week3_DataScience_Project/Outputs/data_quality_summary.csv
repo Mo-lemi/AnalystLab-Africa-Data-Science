@@ -1,0 +1,13 @@
+issue,extent,decision
+Missing REASONCODE / REASONDESCRIPTION,"19,541 encounters","Structural (only set when a condition was targeted); not used, not imputed"
+Dictionary fields absent from CSV,"patients: MIDDLE, FIPS County Code",Not needed; documented
+Identifying patient fields,4 of 20 patient columns kept,"Names, addresses, coordinates dropped on load"
+Exact duplicates / duplicate IDs,0 in every table,None to remove
+Same patient + start time,643 encounters,"Distinct IDs, kept; fully identical ones flagged possible_double_entry"
+Non-inpatient encounters over 24 h,17 encounters,"Flagged duration_suspect; kept for cost, excluded from duration analysis"
+Template durations,wellness and urgent care always 15 min,Those classes excluded from the duration analysis
+Partial year,2022 covers 1 Jan to 5 Feb only,Excluded from year-on-year comparisons
+Zero total claim cost,89 encounters,Kept (mostly death certification)
+Total claim not explained by supplied tables,70% of encounters,Medication/immunisation line items not supplied; limitation
+Single organisation,1 hospital,No between-hospital comparison possible
+Repeated records,"974 patients, 27,891 encounters",Tests use patient-level values and patient bootstrap

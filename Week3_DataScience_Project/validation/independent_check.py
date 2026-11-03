@@ -102,8 +102,9 @@ def compute_figures():
     figures["encounters_over_24h"] = sum(r["duration_h"] > 24 for r in encounters)
     figures["duration_suspect"] = sum(r["suspect"] for r in encounters)
     figures["zero_claim_encounters"] = sum(r["cost"] == 0 for r in encounters)
+    # Equal to the cent: half-cent tolerance so the 1-cent rounding differences never sit on the boundary
     figures["total_equals_base_plus_procedures"] = sum(
-        abs(r["cost"] - float(r["BASE_ENCOUNTER_COST"]) - procedure_cost[r["Id"]]) <= 0.01 for r in encounters)
+        abs(r["cost"] - float(r["BASE_ENCOUNTER_COST"]) - procedure_cost[r["Id"]]) <= 0.005 for r in encounters)
     figures["h1_kruskal_H_patient_level"] = kruskal_h([patient_medians[c] for c in CLASS_ORDER])
     figures["h1_kruskal_H_encounter_level"] = kruskal_h([[r["cost"] for r in by_class[c]] for c in CLASS_ORDER])
     for cls in CLASS_ORDER:

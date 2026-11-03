@@ -1,0 +1,11 @@
+{
+  "name": "week3-report",
+  "private": true,
+  "description": "Builds the Week 3 statistical analysis report",
+  "scripts": {
+    "build": "node statistical_report.js"
+  },
+  "dependencies": {
+    "docx": "9.5.1"
+  }
+}

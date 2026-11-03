@@ -1,0 +1,152 @@
+// Statistical Analysis Report (Reports/Week3_Statistical_Analysis_Report.docx).
+// Run from this folder: npm install, then npm run build. Charts are read from ../Visualizations,
+// so run the notebook first.
+const path = require("path");
+const { p, h1, h2, bullet, numbered, table, image, caption, titleBlock, build } = require("./common");
+
+const out = path.join(__dirname, "..", "Reports", "Week3_Statistical_Analysis_Report.docx");
+const viz = (name) => path.join(__dirname, "..", "Visualizations", `${name}.png`);
+
+const children = [
+  ...titleBlock(
+    "Statistical Analysis Report",
+    "Hospital encounter costs: how they vary by encounter class and with encounter duration",
+    "Author: Molemi Molokoane  ·  Data: AnalystLab Africa healthcare dataset pack (Massachusetts General Hospital, 2011–2022)  ·  November 2026"),
+
+  h1("Executive summary"),
+  p("**Research question:** how do recorded total claim costs vary across encounter classes, and is encounter duration associated with cost? The analysis covers 27,891 encounters for 974 patients at one hospital, January 2011 to February 2022."),
+  table([
+    ["Finding", "Evidence"],
+    ["Claim costs are extremely skewed: averages misrepresent typical cost", "Mean $3,640 vs median $279; largest claim $641,883"],
+    ["Encounter class has a large effect on claim cost", "Kruskal-Wallis on patient-level values: H = 363, p ≈ 3 × 10⁻⁷⁶, ε² = 0.15"],
+    ["Two cost tiers: emergency, wellness and inpatient cost more than ambulatory, outpatient and urgent care", "Probability of superiority 0.66–0.89 for every cross-tier pair"],
+    ["Procedures drive the high claims", "Urgent care median $22,598 with a procedure vs $143 without; urgent care is 13% of encounters but 23% of claim value"],
+    ["A few patients dominate volume, so per-visit and per-patient views differ", "5% of emergency patients make 62% of emergency visits; typical ER visit $146, typical ER patient $2,758"],
+    ["Duration is a weak cost signal outside ambulatory care", "Spearman ρ = 0.48 ambulatory (0.53 within encounter type); not established for emergency"],
+  ], [0.55, 0.45]),
+  p(""),
+  p("**Main recommendations:** set cost KPIs per encounter class using medians and percentiles split by procedure; report per-patient alongside per-encounter figures and review frequent-attender patterns with clinical colleagues; do not use recorded duration as a cost proxy, and fix how encounter times are captured. All findings are associations in recorded claim data, not causal or clinical conclusions."),
+
+  h1("1. Research question and objectives"),
+  p("The hospital records a claim cost for every encounter but has not established how much cost differs between types of care, or whether longer encounters are reliably more expensive. Budgets and cost reviews based on hospital-wide averages may therefore be dominated by a handful of very expensive encounters."),
+  bullet("**Intended users:** hospital operations and finance managers (cost review, budgeting, capacity planning)."),
+  bullet("**Decisions supported:** whether cost targets should be set per encounter class; whether encounter duration is a useful proxy for cost in planning."),
+  bullet("**Variables:** TOTAL_CLAIM_COST (outcome), ENCOUNTERCLASS (H1), duration from START/STOP (H2), PATIENT (cluster identifier), procedure BASE_COST (cost composition), payer and age (potential confounders)."),
+  h2("Success criteria"),
+  table([
+    ["#", "Criterion", "Result"],
+    ["1", "Key figures reconcile with an independent, pandas-free recalculation", "Met: 29 of 29 figures match (validation/independent_check.py)"],
+    ["2", "Conclusions stated only when encounter-level and patient-level results agree", "Met: H2 for emergency left “not established”"],
+    ["3", "Effect sizes with 95% patient-bootstrap confidence intervals for every hypothesis", "Met"],
+    ["4", "No identifying patient information in any output", "Met: automated check of every exported file"],
+    ["5", "Notebook reruns top to bottom in a fresh Colab session with identical results", "Met: fixed random seed; three full Colab runs"],
+  ], [0.05, 0.55, 0.40]),
+
+  h1("2. Data and data quality"),
+  p("The dataset pack contains encounters (27,891 × 14), procedures (47,701 × 9), patients (974 × 20), payers (10) and organizations (1), plus a data dictionary. Patient names end in generated digit sequences and field descriptions match the open-source Synthea generator, so the data appears synthetic; it was nevertheless handled as real patient data."),
+  table([
+    ["Issue", "Extent", "Decision"],
+    ["Identifying patient fields", "16 of 20 patient columns", "Dropped on load; never displayed or exported. Raw data kept out of the public repository"],
+    ["Dictionary fields absent from CSVs", "patients: MIDDLE, FIPS County Code", "Not needed; documented"],
+    ["Missing REASONCODE", "70% of encounters", "Structural (only set when a condition was targeted); not imputed"],
+    ["Duplicates", "0 exact, 0 duplicate IDs; 643 same-patient same-start encounters", "Same-start encounters are different encounter types: kept"],
+    ["Impossible durations", "17 non-inpatient encounters over 24 h (up to 5 years)", "Flagged; kept for cost analysis, excluded from duration analysis"],
+    ["Template durations", "Wellness and urgent care always 15 min; 92–98% of others on one value", "Those two classes excluded from H2; ties reported"],
+    ["Zero claims", "89 encounters (mostly death certification)", "Kept"],
+    ["Unexplained claim value", "Only 30% of totals equal base + procedure cost", "Medication and immunisation line items not supplied: limitation"],
+    ["Repeated records", "974 patients, 27,891 encounters; 10 patients = 21%", "Patient-level tests and patient bootstrap"],
+    ["Coverage", "1 hospital; 2022 has five weeks; median age ~80", "Stated as limitations"],
+  ], [0.26, 0.34, 0.40]),
+  p(""),
+  p("All foreign keys match (no orphan records). No rows were deleted: problem records were flagged, and each analysis states which records it uses."),
+
+  h1("3. Exploratory findings"),
+  image(viz("02_claim_cost_distribution"), 560),
+  caption("Figure 1. Total claim cost is extremely right-skewed and bimodal."),
+  p("Claim cost has a skewness of 16. A large group of cheap encounters ($86–$300, essentially the base cost) and a second hump around $10,000 make the mean ($3,640) thirteen times the median ($279). This rules out mean-based methods such as ANOVA on raw costs."),
+  image(viz("03_claim_cost_by_class"), 580),
+  caption("Figure 2. Claim cost by encounter class (log scale). Diamonds mark the mean."),
+  p("Inpatient ($2,356) and wellness ($1,231) have the highest median claims. Urgent care and emergency have the lowest medians ($143 and $146) but among the highest means: most visits are cheap, a large minority very expensive. The classes differ in shape as well as level."),
+  image(viz("07_cost_with_and_without_procedures"), 580),
+  caption("Figure 3. Median claim with and without a recorded procedure."),
+  p("Procedures explain much of the class pattern. Without a procedure, the median claim in every class except wellness is about $150. With one, the median urgent care claim is $22,598 (mainly electrical cardioversion and catheter ablation) and the median emergency claim $10,233. Encounter class is therefore partly a stand-in for procedure mix."),
+  image(viz("04_encounters_per_patient"), 520),
+  caption("Figure 4. Encounters per patient: the 10 heaviest users account for 21% of all encounters."),
+  p("Encounters are not independent observations. Treating 27,891 encounters as independent would overstate the evidence and let a few patients dominate, so all tests use patient-level values or a bootstrap that resamples patients."),
+  image(viz("06_duration_vs_cost"), 580),
+  caption("Figure 5. Duration vs claim cost in the four classes whose duration varies."),
+  p("Ambulatory encounters form clusters, each a type of encounter with its own fixed duration range and cost band. Encounter type is therefore a confounder for any duration–cost association. In the other classes almost every encounter sits on a single template duration."),
+  p("**What the exploration cannot establish:** why costs differ (no severity, diagnosis-mix or medication data), whether classes would cost the same for comparable patients, anything about other hospitals, or real time spent with patients."),
+
+  h1("4. Hypotheses and statistical methods"),
+  h2("4.1 Hypothesis 1: claim cost differs across encounter classes"),
+  bullet("**H₀:** the claim cost distribution is the same in all six classes. **H₁:** at least one class tends to have higher or lower costs. α = 0.05."),
+  bullet("**Method:** Kruskal-Wallis H test on one value per patient per class (that patient's median claim), followed by 15 pairwise Mann-Whitney U tests with Holm correction."),
+  bullet("**Why not ANOVA:** non-normal (skewness 16), unequal variances (Brown-Forsythe W = 159, p ≈ 10⁻¹⁶⁷) and very unequal group sizes. Logging is not a fix because of $0 claims, and managers care about typical rather than mean-of-log cost."),
+  bullet("**Assumptions:** independence is handled with patient-level values; distribution shapes differ, so the result is read as “one class tends to cost more” rather than “the medians differ”."),
+  bullet("**Effect sizes:** ε² overall; probability of superiority P(A > B) for each pair; class medians with 95% patient-bootstrap confidence intervals (1,000 resamples)."),
+  h2("4.2 Hypothesis 2: longer encounters cost more within a class"),
+  bullet("**H₀:** no monotonic association between duration and claim cost within the class (ρ = 0). **H₁:** ρ ≠ 0. Tested separately in ambulatory, outpatient, emergency and inpatient; Holm correction across the four."),
+  bullet("**Why within class:** pooling would mostly measure class differences (inpatient stays are long and expensive) — a Simpson's paradox risk."),
+  bullet("**Method:** Spearman rank correlation, because both variables are skewed and the relationship need not be linear. Patient-bootstrap confidence intervals and a patient-level sensitivity version handle repeated records."),
+  bullet("**Confounding check:** a within-type correlation, with ranks centred within each encounter description, so only variation inside the same type of encounter counts."),
+
+  h1("5. Results and interpretation"),
+  h2("5.1 Hypothesis 1"),
+  table([
+    ["Analysis", "n", "H", "p", "ε²"],
+    ["Patient level (primary)", "2,393", "363.0", "2.7 × 10⁻⁷⁶", "0.152 (large)"],
+    ["Encounter level (comparison only)", "27,891", "2,025.2", "< 10⁻³⁰⁰", "0.073"],
+  ], [0.38, 0.12, 0.14, 0.18, 0.18]),
+  p(""),
+  p("**H₀ is rejected.** Both levels agree. The pairwise tests show two tiers: ambulatory, outpatient and urgent care (typical patient-level claim $235–$279) versus emergency, wellness and inpatient ($1,138–$2,758). Every cross-tier comparison is significant after Holm correction; within tiers differences are small and mostly not significant."),
+  image(viz("11_h1_pairwise_superiority"), 470),
+  caption("Figure 6. Probability that a patient's claim in the row class exceeds one in the column class."),
+  p("**In plain language:** emergency, wellness and inpatient encounters reliably cost more than ambulatory, outpatient and urgent care encounters — for example, a patient's wellness claim exceeds their outpatient claim 89% of the time."),
+  p("**Counting visits vs counting patients:** the typical emergency visit costs $146, but the typical emergency patient's claim is $2,758. The 5% most frequent emergency users generate 62% of emergency visits, and their visits are cheap ($146 median vs $1,066 for other patients). Ignoring repeated records would also overstate precision: patient-bootstrap intervals are about 4× wider than a naive encounter bootstrap for ambulatory and 14× for inpatient."),
+  image(viz("10_h1_class_medians_ci"), 540),
+  caption("Figure 7. Median claim by class with 95% patient-bootstrap confidence intervals."),
+  h2("5.2 Hypothesis 2"),
+  table([
+    ["Class", "ρ (95% CI)", "Within type", "Patient level", "Conclusion"],
+    ["ambulatory", "0.48 (0.39–0.54)", "0.53 (0.46–0.58)", "0.45", "Moderate; survives confounding check"],
+    ["outpatient", "0.40 (0.34–0.46)", "0.17 (0.13–0.21)", "0.29", "Mostly explained by encounter type"],
+    ["emergency", "0.16 (0.07–0.23)", "0.06 (0.03–0.13)", "0.08 (p = 0.09)", "Not established (levels disagree)"],
+    ["inpatient", "0.17 (0.07–0.29)", "0.24 (0.14–0.37)", "0.46", "Weak; driven by rare long stays"],
+  ], [0.15, 0.2, 0.2, 0.17, 0.28]),
+  p(""),
+  image(viz("12_h2_duration_cost_correlation"), 540),
+  caption("Figure 8. Duration–cost correlation, all encounters vs within the same encounter type."),
+  p("**H₀ is rejected** for ambulatory, outpatient and inpatient, and not for emergency. In ambulatory care longer visits do tend to cost more even when comparing like with like. In outpatient care the apparent association comes mainly from longer visit types being pricier types. Even the strongest correlation (ρ ≈ 0.5) means duration explains only about a quarter of the variation in cost ranks, and because recorded durations are mostly templates, “duration” is largely another attribute of encounter type. Nothing here shows that shortening encounters would reduce cost."),
+
+  h1("6. Validation"),
+  bullet("**Independent reconciliation:** a separate script using only Python's standard library recomputes 29 key figures from the raw CSVs — counts, medians, both Kruskal-Wallis H statistics (with tie correction) and the four Spearman correlations. All 29 match the notebook."),
+  bullet("**The cross-check found and fixed two real errors** in the “total = base + procedures” count: NumPy's default relative tolerance let a $40,000 claim “match” while 40 cents off (34.4% reported vs 30.4%), and a $0.01 tolerance sat exactly on 124 claims that differ by one cent, so floating-point noise decided them. “Equal” is now defined as equal to the cent in both implementations."),
+  bullet("**Sanity tests** of the analysis functions (Holm adjustment, probability of superiority, the patient bootstrap never splitting a patient, the within-type correlation removing a purely between-type pattern) all pass."),
+  bullet("**Agreement check:** every conclusion requires encounter-level and patient-level results to agree."),
+  bullet("**Privacy check:** every exported file is scanned automatically for identifying columns and patient IDs."),
+
+  h1("7. Limitations"),
+  bullet("**Repeated records:** handled with patient-level values and a patient bootstrap, but a patient can appear in several classes, so H1 groups are not fully independent."),
+  bullet("**Unequal group sizes:** 153 to 695 patients per class; estimates for small classes are less precise."),
+  bullet("**Missing information:** about 70% of claim value cannot be traced to the supplied tables (no medication or immunisation line items); no diagnosis severity."),
+  bullet("**Recording problems:** template durations, 17 impossible durations, template prices, and a 2014 volume spike that coincides with the bad duration records."),
+  bullet("**Confounding:** class differences are entangled with procedure mix, payer mix (61% Medicare in emergency vs 35% in ambulatory) and age; payer and age were not adjusted for, so class differences are descriptive, not explanatory."),
+  bullet("**Coverage:** one hospital, an elderly adult population (median age ~80), a partial 2022, and apparently synthetic data — results should not be generalised."),
+  bullet("**Claim cost is not cost of care,** and **association is not causation:** the analysis shows that classes differ and that longer ambulatory visits tend to cost more, not that class or duration causes cost."),
+
+  h1("8. Recommendations"),
+  p("These are operational recommendations based on recorded claim data. None is a clinical recommendation."),
+  table([
+    ["Recommendation", "Supporting finding", "Benefit", "Limitation / information needed"],
+    ["1. Set cost KPIs per encounter class using medians and 90th percentiles, split by whether a procedure was performed", "Skew (mean 13× median); two cost tiers; procedures drive high claims", "Budgets and variance reviews not distorted by a few very large claims; reviews target procedure-heavy care", "Claim amounts are not actual cost; medication line items needed"],
+    ["2. Report per-patient alongside per-encounter figures; review frequent-attender patterns with clinical colleagues", "5% of ER patients make 62% of ER visits; per-visit and per-patient medians differ 19-fold", "Truer picture of demand; possible reduction in emergency-department load", "No severity data: whether visits were necessary is a clinical judgement"],
+    ["3. Do not use recorded duration as a cost proxy (except cautiously in ambulatory care); validate and record actual encounter times", "Template durations; 17 impossible durations; weak or absent correlations", "Reliable length-of-stay and throughput metrics", "Source-system default-duration rules must be confirmed"],
+    ["4. Extend the data (medications, severity, more sites) and re-run with payer and age adjustment", "Confounding and coverage limitations", "Moves from describing to explaining cost differences", "Requires data-sharing approval and privacy review"],
+  ], [0.28, 0.25, 0.24, 0.23]),
+
+  h1("9. Reproducibility and attribution"),
+  p("The full analysis is in Week3_Healthcare_Statistical_Investigation.ipynb; the README gives step-by-step instructions for Google Colab and local runs, and for the independent check. Tools: Python, pandas, NumPy, SciPy, Matplotlib and seaborn; this report was generated with the docx library for Node.js. Data: healthcare dataset pack supplied by AnalystLab Africa; field definitions follow its data dictionary. The chart colour palette and the statistical methods are standard; no external code was copied."),
+];
+
+build(children, out, "Week 3 · Statistical Analysis Report");

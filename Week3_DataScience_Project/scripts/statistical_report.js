@@ -39,7 +39,7 @@ const children = [
     ["2", "Conclusions stated only when encounter-level and patient-level results agree", "Met: H2 for emergency left “not established”"],
     ["3", "Effect sizes with 95% patient-bootstrap confidence intervals for every hypothesis", "Met"],
     ["4", "No identifying patient information in any output", "Met: automated check of every exported file"],
-    ["5", "Notebook reruns top to bottom in a fresh Colab session with identical results", "Met: fixed random seed; three full Colab runs"],
+    ["5", "Notebook reruns top to bottom in a fresh Colab session with identical results", "Met: fixed random seed; repeated full Colab runs gave identical results"],
   ], [0.05, 0.55, 0.40]),
 
   h1("2. Data and data quality"),
@@ -124,7 +124,7 @@ const children = [
   bullet("**The cross-check found and fixed two real errors** in the “total = base + procedures” count: NumPy's default relative tolerance let a $40,000 claim “match” while 40 cents off (34.4% reported vs 30.4%), and a $0.01 tolerance sat exactly on 124 claims that differ by one cent, so floating-point noise decided them. “Equal” is now defined as equal to the cent in both implementations."),
   bullet("**Sanity tests** of the analysis functions (Holm adjustment, probability of superiority, the patient bootstrap never splitting a patient, the within-type correlation removing a purely between-type pattern) all pass."),
   bullet("**Agreement check:** every conclusion requires encounter-level and patient-level results to agree."),
-  bullet("**Privacy check:** every exported file is scanned automatically for identifying columns and patient IDs."),
+  bullet("**Privacy checks:** every exported file is scanned automatically for identifying columns and patient IDs, and a pre-publication script scans the notebook, README and report source for every patient ID, name and address in the raw data. That scan caught one example patient name in the notebook text and patient IDs in a table preview; both were removed before publication."),
 
   h1("7. Limitations"),
   bullet("**Repeated records:** handled with patient-level values and a patient bootstrap, but a patient can appear in several classes, so H1 groups are not fully independent."),

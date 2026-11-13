@@ -1,0 +1,13 @@
+step,column,rule,rows_affected,rationale
+1,all text columns,Trim leading and trailing spaces,0,Prevents the same category from being counted twice; no case or spacing variants were found
+2,forwarding_days,"Date received minus Date submitted, in whole days",62516,CFPB forwarding interval; not the company's response time. No negative intervals found
+3,long_forwarding,Flag intervals above 30 days,435,"Kept, not removed: long intervals are plausible and are analysed as a group"
+4,"year, quarter, month, year_month, year_quarter",Derived from Date submitted,62516,Volume is dated by when the CFPB received the complaint
+5,boundary_month,Flag the first (2017-05) and last (2023-08) months,1461,The brief treats them as partial; excluded from month-level tests only
+6,product_short,Short chart label for each product,62516,Full CFPB product names are kept in Product
+7,sub_product,Blank -> 'Not specified',7,The dictionary says not all products have sub-products
+8,sub_issue,Blank -> 'No sub-issue recorded',10858,The dictionary says not all issues have sub-issues; a blank is not missing data
+9,public_response,Blank and In progress -> 'Pending (complaint in progress)',1494,"The company has not finished responding, so no public response is expected yet"
+10,public_response,Blank and closed -> 'Not recorded',681,A public response is optional; a blank is not a refusal or a dispute
+11,timely_status / timely,Blank -> 'Pending (in progress)' / <NA>,1494,Every blank is an In-progress complaint; it must not be counted as 'No'
+12,content_duplicate,Flag rows identical on every field except Complaint ID,2784,"Kept: no consumer identifier exists, so identical categories on the same day are expected for different consumers"

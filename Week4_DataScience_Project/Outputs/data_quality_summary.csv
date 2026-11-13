@@ -1,0 +1,15 @@
+check,result,action
+Records,62516,"Matches the brief (62,516)"
+Columns,12,Matches the brief and data dictionary
+Duplicate Complaint IDs,0,Complaint ID is a valid primary key
+Exact duplicate rows,0,
+Rows identical except Complaint ID,2784,Kept and flagged; no consumer identifier exists
+Blank Sub-product,7,Labelled 'Not specified'
+Blank Sub-issue,10858,Labelled 'No sub-issue recorded'
+Blank public response (in progress),1494,Labelled 'Pending'
+Blank public response (closed),681,Labelled 'Not recorded'
+Blank Timely response?,1494,All In progress; excluded from timely rate
+Negative forwarding intervals,0,
+Forwarding intervals > 30 days,435,Kept and flagged
+Missing months in range,0,76 of 76 months present
+Category spelling/case variants,0,No standardisation needed

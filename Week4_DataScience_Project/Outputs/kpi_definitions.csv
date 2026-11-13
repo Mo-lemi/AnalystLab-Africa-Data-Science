@@ -1,0 +1,10 @@
+kpi,definition,value
+Total complaints,Count of unique Complaint IDs,"62,516"
+Complaint volume period,Dated by Date submitted (when the CFPB received the complaint),2017-05-01 to 2023-08-28
+Timely-response rate,Yes / (Yes + No); In-progress (blank) records excluded and reported separately,"96.06% (58,619 of 61,022; 1,494 pending excluded)"
+In-progress complaints,Company response to consumer = 'In progress',"1,494"
+Forwarding interval,"Date received minus Date submitted, in days (CFPB to company; not company response time)","mean 1.22 days, median 0"
+Same-day forwarding,Share of complaints with a forwarding interval of 0 days,79.4%
+Unusually long forwarding,Forwarding interval > 30 days,435 complaints
+Product share,Complaints for a product / total complaints,see Outputs/product_share.csv
+Year-over-year change,"Change in annual complaints; 2017 and 2023 are partial years, so per-month averages are also compared",see Outputs/annual_volume.csv

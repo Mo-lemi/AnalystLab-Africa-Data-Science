@@ -1,0 +1,8 @@
+year,complaints,months,complaints_per_month,yoy_change_pct,yoy_change_per_month_pct,partial_year
+2017,5394,8,674.2,,,True
+2018,7872,12,656.0,45.9,-2.7,False
+2019,7075,12,589.6,-10.1,-10.1,False
+2020,8942,12,745.2,26.4,26.4,False
+2021,11149,12,929.1,24.7,24.7,False
+2022,12953,12,1079.4,16.2,16.2,False
+2023,9131,8,1141.4,-29.5,5.7,True

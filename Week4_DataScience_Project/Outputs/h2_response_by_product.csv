@@ -1,0 +1,10 @@
+,count,count,count,row_pct,row_pct,row_pct,adjusted_residual,adjusted_residual,adjusted_residual
+,Explanation,Monetary relief,Non-monetary relief,Explanation,Monetary relief,Non-monetary relief,Explanation,Monetary relief,Non-monetary relief
+product_test,,,,,,,,,
+Checking/savings,14836,8027,1241,61.55,33.3,5.15,-24.33,43.01,-24.82
+Credit/prepaid card,9361,4798,1621,59.32,30.41,10.27,-24.71,21.55,8.46
+Credit reporting,6067,273,1178,80.7,3.63,15.67,26.5,-44.3,23.16
+Mortgage,4928,750,876,75.19,11.44,13.37,14.47,-25.34,14.41
+Money transfer,2709,634,41,80.05,18.74,1.21,16.31,-7.49,-15.83
+Debt collection,2367,111,209,88.09,4.13,7.78,23.53,-24.74,-1.63
+Other loans,776,104,107,78.62,10.54,10.84,7.66,-10.04,2.48

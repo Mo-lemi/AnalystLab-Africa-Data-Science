@@ -1,0 +1,8 @@
+product_test,complaints,same_day_pct,ci_low_pct,ci_high_pct,mean_days,mean_days_if_delayed,adjusted_residual_same_day
+Checking/savings,24814,74.15,73.6,74.69,1.23,4.77,-26.29
+Credit/prepaid card,16197,82.04,81.44,82.62,1.13,6.28,9.67
+Credit reporting,7710,91.88,91.25,92.47,0.74,9.12,28.95
+Mortgage,6601,71.87,70.77,72.94,1.86,6.61,-15.99
+Money transfer,3453,88.13,87.0,89.16,1.06,8.96,13.05
+Debt collection,2736,84.36,82.95,85.67,1.64,10.5,6.56
+Other loans,1005,76.32,73.59,78.84,1.55,6.53,-2.43

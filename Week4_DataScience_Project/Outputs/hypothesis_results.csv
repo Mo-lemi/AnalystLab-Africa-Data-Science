@@ -1,0 +1,7 @@
+hypothesis,test,statistic,p,effect,size,p_holm,reject_H0
+H1,"Kruskal-Wallis, monthly counts by year",H = 57.0,< 0.001,epsilon-squared = 0.78,large,< 0.001,True
+H1,"Mann-Kendall trend, monthly counts",tau = 0.61,< 0.001,Sen slope = +102 per month per year,n/a,< 0.001,True
+H2,"Chi-square, response x product (closed)","chi2 = 5,426",< 0.001,Cramer's V = 0.211,medium,< 0.001,True
+H3,"Chi-square, timely x year (2017-2022)","chi2 = 2,747",< 0.001,Cramer's V = 0.227,small,< 0.001,True
+H4,"Kruskal-Wallis, forwarding days by product","H = 1,508",< 0.001,epsilon-squared = 0.024,small,< 0.001,True
+H4,"Chi-square, same-day forwarding x product","chi2 = 1,657",< 0.001,Cramer's V = 0.163,small,< 0.001,True

@@ -200,3 +200,34 @@ def test_yoy_change_flags_partial_years():
     assert yoy.loc[2021, "partial_year"] == True  # noqa: E712
     assert yoy.loc[2021, "complaints_per_month"] == 3.0
     assert yoy.loc[2021, "yoy_change_per_month_pct"] == 200.0
+
+
+# ------------------------------------------------------- statistics helpers
+
+
+def test_wilson_ci_brackets_rate_and_stays_in_bounds():
+    low, high = cp.wilson_ci(50, 100)
+    assert low < 0.5 < high and high - 0.5 == pytest.approx(0.5 - low)
+    low, high = cp.wilson_ci(100, 100)
+    assert 0 < low < 1 and high == pytest.approx(1.0)
+
+
+def test_holm_adjust_matches_hand_calculation():
+    # sorted p: 0.01*3, 0.02*2, 0.04*1 -> 0.03, 0.04, 0.04 (monotone), returned in input order
+    adjusted = cp.holm_adjust([0.04, 0.01, 0.02])
+    assert adjusted == pytest.approx([0.04, 0.03, 0.04])
+    assert cp.holm_adjust([0.6, 0.5]).max() == 1.0
+
+
+def test_adjusted_residuals_zero_under_independence_and_signed_otherwise():
+    independent = pd.DataFrame([[10, 20], [30, 60]])
+    assert cp.adjusted_residuals(independent).abs().max().max() == pytest.approx(0)
+    skewed = pd.DataFrame([[40, 10], [10, 40]], index=["a", "b"], columns=["x", "y"])
+    r = cp.adjusted_residuals(skewed)
+    assert r.loc["a", "x"] > 1.96 and r.loc["a", "y"] < -1.96
+    assert r.loc["a", "x"] == pytest.approx(-r.loc["a", "y"])
+
+
+def test_epsilon_squared():
+    assert cp.epsilon_squared(9.0, 10) == pytest.approx(1.0)
+    assert cp.epsilon_squared(0.0, 50) == 0.0

@@ -17,6 +17,7 @@ from __future__ import annotations
 import hashlib
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 RAW_COLUMNS = [
@@ -287,3 +288,53 @@ def yoy_change(df: pd.DataFrame) -> pd.DataFrame:
     ).round(1)
     annual["partial_year"] = annual["months"] < 12
     return annual
+
+
+# ------------------------------------------------------- statistics helpers
+
+
+def wilson_ci(successes, n, z: float = 1.96):
+    """Wilson score interval for a proportion, returned as (low, high) in 0-1.
+
+    Works on scalars or aligned pandas Series / numpy arrays. Unlike the normal
+    approximation it stays inside [0, 1] for rates close to 0% or 100%.
+    """
+    successes = np.asarray(successes, dtype=float)
+    n = np.asarray(n, dtype=float)
+    p = successes / n
+    centre = (p + z**2 / (2 * n)) / (1 + z**2 / n)
+    half = z * np.sqrt(p * (1 - p) / n + z**2 / (4 * n**2)) / (1 + z**2 / n)
+    return centre - half, centre + half
+
+
+def holm_adjust(p_values) -> np.ndarray:
+    """Holm-Bonferroni adjusted p-values, in the original order, capped at 1."""
+    p = np.asarray(p_values, dtype=float)
+    m = p.size
+    order = np.argsort(p)
+    adjusted = np.empty(m)
+    running_max = 0.0
+    for rank, idx in enumerate(order):
+        running_max = max(running_max, (m - rank) * p[idx])
+        adjusted[idx] = min(running_max, 1.0)
+    return adjusted
+
+
+def adjusted_residuals(table: pd.DataFrame) -> pd.DataFrame:
+    """Haberman adjusted standardised residuals of a contingency table.
+
+    Under independence each is approximately standard normal, so |r| > 1.96
+    marks a cell that is clearly over- (+) or under- (-) represented.
+    """
+    observed = table.to_numpy(dtype=float)
+    n = observed.sum()
+    row = observed.sum(axis=1, keepdims=True)
+    col = observed.sum(axis=0, keepdims=True)
+    expected = row @ col / n
+    resid = (observed - expected) / np.sqrt(expected * (1 - row / n) * (1 - col / n))
+    return pd.DataFrame(resid, index=table.index, columns=table.columns)
+
+
+def epsilon_squared(h_statistic: float, n: int) -> float:
+    """Epsilon-squared effect size for a Kruskal-Wallis H statistic: H / (n - 1)."""
+    return float(h_statistic) / (n - 1)

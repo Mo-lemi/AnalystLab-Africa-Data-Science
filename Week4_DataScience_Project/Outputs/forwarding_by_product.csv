@@ -1,0 +1,10 @@
+product_short,complaints,mean_days,median_days,p95_days,same_day_pct,long_count
+Checking/savings,24814,1.23,0.0,5.0,74.15,156
+Credit/prepaid card,16197,1.13,0.0,5.0,82.04,105
+Credit reporting,7710,0.74,0.0,3.0,91.88,25
+Mortgage,6601,1.86,0.0,9.0,71.87,93
+Money transfer,3453,1.06,0.0,5.0,88.13,26
+Debt collection,2736,1.64,0.0,10.0,84.36,21
+Vehicle loan/lease,633,1.44,0.0,5.8,80.41,9
+Payday/personal loan,333,1.68,0.0,10.4,69.67,0
+Student loan,39,2.13,0.0,12.0,66.67,0

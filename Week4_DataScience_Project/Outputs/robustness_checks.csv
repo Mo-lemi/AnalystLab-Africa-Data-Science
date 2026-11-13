@@ -1,0 +1,10 @@
+,All records (Section 5),Look-alike rows removed,July 2023 removed,Web complaints only
+H1 epsilon-squared (years),0.781,0.775,0.774,
+H1 Mann-Kendall tau,0.607,0.605,0.596,
+"H1 Sen slope (per month, per year)",102.0,96.0,98.708,
+H2 Cramer's V,0.211,0.21,,0.222
+H3 Cramer's V,0.227,0.224,,0.23
+H3 untimely % 2020,0.693,0.697,,0.657
+H3 untimely % 2021,10.979,10.807,,11.642
+H4 epsilon-squared,0.024,0.023,,0.004
+H4 same-day Cramer's V,0.163,0.16,,0.06

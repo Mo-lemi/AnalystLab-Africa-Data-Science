@@ -1,0 +1,39 @@
+figure,value
+total_complaints,62516.0
+unique_complaint_ids,62516.0
+content_duplicate_rows,2784.0
+complaints_2022,12953.0
+complaints_2021,11149.0
+complaints_2023,9131.0
+complaints_2020,8942.0
+complaints_2018,7872.0
+complaints_2019,7075.0
+complaints_2017,5394.0
+product::Checking or savings account,24814.0
+product::Credit card or prepaid card,16197.0
+"product::Credit reporting, credit repair services, or other personal consumer reports",7710.0
+product::Mortgage,6601.0
+"product::Money transfer, virtual currency, or money service",3453.0
+product::Debt collection,2736.0
+product::Vehicle loan or lease,633.0
+"product::Payday loan, title loan, or personal loan",333.0
+product::Student loan,39.0
+timely_yes,58619.0
+timely_no,2403.0
+timely_pending,1494.0
+timely_pct,96.06207597260004
+in_progress,1494.0
+forwarding_mean_days,1.224886429074157
+forwarding_median_days,0.0
+forwarding_max_days,275.0
+same_day_pct,79.3940751167701
+long_forwarding_count,435.0
+full_months,74.0
+h1_kruskal_h,56.985548928084775
+h2_chi2,5425.950998743979
+h2_cramers_v,0.21086679005864725
+h3_chi2,2747.350666317494
+untimely_pct_2020,0.6933571907850593
+untimely_pct_2021,10.978563099829582
+h4_kruskal_h,1508.0191235086415
+h4_same_day_chi2,1657.426452894234

@@ -1,0 +1,5 @@
+aspect,test,statistic,p_value,effect_size_measure,effect_size,decision_5pct
+Location,Friedman (days as blocks),13.86858100431587,0.016466113016034296,Kendall's W,0.0027571731618918228,Reject H0
+Location,Kruskal-Wallis (assumes independence),7.876432939120177,0.16317842162989413,epsilon²,0.0013051255905750085,Do not reject H0
+Spread,"Brown-Forsythe (Levene, median)",42.20839052401933,7.110871943077915e-43,ratio of largest to smallest SD,2.0970394887919483,Reject H0
+Spread,Friedman on |return − median| (days as blocks),204.80715705765397,2.6599486594746426e-42,Kendall's W,0.04071712863969264,Reject H0

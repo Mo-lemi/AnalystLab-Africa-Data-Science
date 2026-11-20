@@ -1,0 +1,13 @@
+step,action,reason,rows_affected
+1,Read the CSV with utf-8-sig and check the column names,The file starts with a byte-order mark,all
+2,Parse date with format %m/%d/%Y,Avoid day/month ambiguity; any bad value stops the run,all
+3,"Sort by symbol, then date",Returns and rolling values must be computed in date order within each symbol,all
+4,Compute returns per symbol from the close of the previous record,Close is never missing,"496,967 returns"
+5,Flag returns that span a gap in the symbol's history,A multi-day change is not a daily return,8 returns
+6,Flag single closes that spike >= 20% and reverse within 5% next day,Recording errors (14 Sep 2017 cluster; LNT split),5 closes / 10 returns
+7,Flag returns on dates of spin-offs and distributions,Price falls are not losses; file is not adjusted,12 returns
+8,Flag rows with inconsistent open/high/low/close; set their daily range to missing,Range would be wrong,12 rows
+9,Treat volume as missing on placeholder rows (no open/high/low and <= 100 shares),Not a real trading record,6 rows
+10,"Keep missing open/high/low as missing (no imputation, never zero)",Brief requirement; close-based work unaffected,11 rows
+11,"Add year, quarter, month, weekday, price change, % and log return, range, MA20/50/200, 21-day volatility, relative volume",Analytical fields (trailing windows only),all
+12,valid_return = one-day return with no flag on either day,Single definition used by every statistic,"496,937 valid returns"

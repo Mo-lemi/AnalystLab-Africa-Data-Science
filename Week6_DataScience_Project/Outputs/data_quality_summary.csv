@@ -1,0 +1,14 @@
+check,brief_initial_observation,this_analysis,status,treatment
+Missing open values,11,11,Confirmed,Left missing; row excluded from range statistics only
+Missing high values,8,8,Confirmed,Left missing
+Missing low values,8,8,Confirmed,Left missing
+Missing close or volume,not stated,0,None,-
+Duplicate symbol-date combinations,0,0,Confirmed,-
+Zero-volume observations,4,4,Confirmed (+2 rows with <= 100 shares),"6 placeholder rows: volume set to missing, close kept"
+Incomplete stock histories,present,26,Confirmed: 26 symbols,Compared only on common dates; gap returns excluded
+Gaps inside a history,not stated,35,New finding,8 multi-day returns flagged and excluded
+Inconsistent open/high/low/close,not stated,12,New finding,Flagged; daily range set to missing
+Probable price errors (spike and reversal),not stated,5,New finding,Returns into and out of the close excluded
+Unadjusted corporate actions,not stated,12,New finding,Return excluded from market-wide figures
+Split adjustment,not verified,9 of 9 splits adjusted,Verified,No correction needed; dividends not adjusted
+Rows in date order per symbol,required,file is ordered by date then symbol,Re-sorted,"Sorted by symbol, date"

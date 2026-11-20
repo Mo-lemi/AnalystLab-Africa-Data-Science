@@ -1,0 +1,11 @@
+symbol,max,min,mean,group
+PCLN,2049.0,973.8,1390.272641509434,highest closing price
+AMZN,1195.83,286.95,619.2447874875868,highest closing price
+GOOGL,1085.09,497.06,722.559016981132,highest closing price
+GOOG,1077.14,492.55,714.4968481559537,highest closing price
+AZO,815.98,474.11,660.2464250248263,highest closing price
+CHK,31.3,1.59,11.758113207547172,lowest closing price
+AMD,15.2,1.62,5.908604766633564,lowest closing price
+FCX,39.04,3.74,18.2059682224429,lowest closing price
+MRO,41.69,6.73,21.49130585898709,lowest closing price
+RF,17.49,7.08,11.13520854021847,lowest closing price

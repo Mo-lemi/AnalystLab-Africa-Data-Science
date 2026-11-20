@@ -2,6 +2,7 @@
 .venv/
 .venv_old/
 __pycache__/
+.pytest_cache/
 *.pyc
 .ipynb_checkpoints/
 
@@ -25,3 +26,6 @@ Week3_DataScience_Project/Data/*.sql
 # Week 4 cleaned dataset (34 MB; rebuilt by the notebook)
 Week4_DataScience_Project/Data/Cleaned/
 
+
+# Week 5 cleaned 10-minute dataset (rebuilt by the notebook)
+Week5_DataScience_Project/Data/Cleaned/

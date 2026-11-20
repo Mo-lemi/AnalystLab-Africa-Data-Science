@@ -1,0 +1,8 @@
+Field,Dictionary says,What the data shows,Treatment in this analysis
+Datetime,Date and time of the recording,"Start of each 10-minute interval, local time zone not stated",Parsed with an explicit month/day/year format
+Temperature,Temperature in Celsius,Plausible (3 to 40 °C),Used as recorded
+Humidity,Concentration of water vapour,Values 11 to 95 behave as relative humidity (%),"Treated as relative humidity, %"
+WindSpeed,Speed of the wind in km/h,Two states (about 0.08 and about 4.9); a range this narrow is not plausible as km/h,Analysed as a two-state variable (High > 2) as well as numerically; unit treated as uncertain
+GeneralDiffuseFlows,Emission gases diffusing into the broader atmosphere,"Zero at night, peaks at noon, up to 1,163 (close to clear-sky solar irradiance in W/m²)",Treated as solar irradiance (likely W/m²); used only as a daylight control in 6.5
+DiffuseFlows,Emission gases diffusing into the local atmosphere,"Zero at night and solar-shaped, but peaks at 16:00 and exceeds GDF in 15% of daylight readings, which diffuse irradiance cannot do",Treated as a solar-radiation reading of uncertain definition; not used in conclusions
+PowerConsumption_Zone1-3,Power consumption in kWh,"Magnitudes match average load in kW, not energy per 10 minutes",Treated as average load (kW); energy only derived as mean kW × hours

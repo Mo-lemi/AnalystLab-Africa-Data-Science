@@ -1,0 +1,12 @@
+Check,Result,Note
+Rows,52416,"52,416 readings = 364 days × 144"
+Columns,9,As listed in the dictionary
+Missing values,0,None in any column
+Fully duplicated rows,0,
+Duplicate timestamps,0,
+Missing 10-minute timestamps,0,Between first and last reading
+Irregular intervals,0,Every step is exactly 10 minutes
+Period,01 Jan 2017 00:00 to 30 Dec 2017 23:50,31 December is not in the file
+Out-of-range readings,0,Against the plausible ranges in power_prep.py
+Spike readings flagged (all zones),533,Kept; tested in Section 8
+Dictionary issues,4,"Load unit, two irradiance fields, wind unit (Section 1)"

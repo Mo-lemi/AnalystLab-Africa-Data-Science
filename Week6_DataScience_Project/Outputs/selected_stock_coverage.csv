@@ -1,0 +1,7 @@
+symbol,company,sector,records,first,last,valid_returns,ohlc_missing,ohlc_inconsistent,no_trade,price_error,multi_day_return,corporate_action
+AAPL,Apple,Information technology,1007,2014-01-02,2017-12-29,1006,0,0,0,0,0,0
+AMZN,Amazon,Consumer discretionary,1007,2014-01-02,2017-12-29,1006,0,0,0,0,0,0
+JPM,JPMorgan Chase,Financials,1007,2014-01-02,2017-12-29,1006,0,0,0,0,0,0
+JNJ,Johnson & Johnson,Health care,1007,2014-01-02,2017-12-29,1006,0,0,0,0,0,0
+XOM,Exxon Mobil,Energy,1007,2014-01-02,2017-12-29,1006,0,0,0,0,0,0
+WMT,Walmart,Consumer staples,1007,2014-01-02,2017-12-29,1006,0,0,0,0,0,0
